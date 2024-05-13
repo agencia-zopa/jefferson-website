@@ -1,0 +1,54 @@
+$xs-max: 700px;
+
+$sm-min: 700px;
+$sm-max: 960px;
+
+$md-min: 960px;
+$md-max: 1440px;
+
+$lg-min: 1440px;
+
+$breakpoints: (
+    xs: (
+        min: 0,
+        max: $xs-max
+    ),
+    sm: (
+        min: $sm-min,
+        max: $sm-max
+    ),
+    md: (
+        min: $md-min,
+        max: $md-max
+    ),
+    lg: (
+        min: $lg-min,
+        max: 99999px
+    )
+);
+
+@mixin at-or-smaller-than($breakpoint) {
+  @if map-get($breakpoints, $breakpoint) {
+    @media only screen and (max-width: map-get(map-get($breakpoints, $breakpoint), 'max')) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin at-or-bigger-than($breakpoint) {
+  @media only screen and (min-width: map-get(map-get($breakpoints, $breakpoint), 'min')) {
+      @content;
+  }
+}
+
+:export {
+  @each $breakpoint, $value in $breakpoints {
+    #{$breakpoint}-max: map-get($value, 'max');
+    #{$breakpoint}-min: map-get($value, 'min');
+  }
+};
