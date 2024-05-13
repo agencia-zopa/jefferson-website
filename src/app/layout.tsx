@@ -3,7 +3,7 @@ import "@/globals.scss";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Teste",
   description: "",
 };
 
