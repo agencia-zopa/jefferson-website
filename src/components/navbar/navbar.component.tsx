@@ -2,7 +2,7 @@
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import logoClinica from "@public/logo_clinica_otorrino-4.png";
-import pipe from "@public/Vector 6553.png";
+import pipe from "@public/divider.png";
 import { useState } from "react";
 import { ScheduleAppointment } from "../schedule-appointment/schedule-appointment.component";
 
