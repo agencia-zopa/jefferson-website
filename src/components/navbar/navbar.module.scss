@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 120px;
-  // background-color: gray;
+  background-color: #ffffff;
 }
 
 .about {
@@ -12,7 +12,6 @@
 }
 
 .doctorName {
-  font-family: Manrope; //TO-DO adicionar fonte no projeto
   font-size: 20px;
   font-weight: 800;
   margin: auto;
@@ -26,18 +25,15 @@
 }
 
 .specialization {
-  font-family: Manrope;
   font-size: 16px;
   font-weight: 800;
 }
 
 .crm {
-  font-family: Manrope;
   font-size: 14px;
 }
 
 .rqe {
-  font-family: Manrope;
   font-size: 14px;
 }
 
@@ -48,7 +44,6 @@
 }
 
 .navItem {
-  font-family: Manrope;
   margin-left: 15px;
   margin-right: 15px;
   color: #8b8b8b;
