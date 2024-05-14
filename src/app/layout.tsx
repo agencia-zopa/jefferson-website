@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/globals.scss";
 import React from "react";
+import { Navbar } from "@/components/navbar/navbar.component";
 
 export const metadata: Metadata = {
   title: "Teste",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         {children}
       </body>
     </html>
