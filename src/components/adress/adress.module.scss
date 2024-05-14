@@ -3,8 +3,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  width: 350px;
   margin: auto;
+  margin-left: 0;
 }
 
 .adressTitleLine {
