@@ -6,6 +6,9 @@ import otologiaImage from "@public/IMG_2636.jpg";
 import otoneuroImage from "@public/IMG_2621.jpg";
 
 import { PathologySection } from "@/components/pathology-section/pathology-section.component";
+import { ScheduleAppointmentSection } from "@/components/schedule-appointment-section/schedule-appointment-section.component";
+import { ProceduresSection } from "@/components/procedures-section/procedures-section.component";
+import { ConveniosSection } from "@/components/convenios-section/convenios-section.component";
 import { ReviewsSection } from "@/components/reviews-section/reviews-section.component";
 
 export default function Home() {
@@ -39,8 +42,11 @@ export default function Home() {
         neurologia (estudo do sistema nervoso) para abordar condições que afetam
         tanto a audição quanto o equilíbrio.
       </SpecialtySection>
+      <ProceduresSection />
       <PathologySection />
       <ReviewsSection />
+      <ScheduleAppointmentSection />
+      <ConveniosSection />
     </>
   );
 }
