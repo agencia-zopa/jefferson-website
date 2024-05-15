@@ -20,8 +20,8 @@ export default function Home() {
       <SpecialtySection imageSrc={otoneuroImage} imageAlt="Dr. Jefferson examinando uma paciente" title="Otoneurologia" articleHref="#" flipped>
         A Otoneurologia é uma subespecialidade médica que se concentra no estudo e tratamento dos distúrbios relacionados ao ouvido interno e ao sistema nervoso vestibular, responsável pelo equilíbrio e pela orientação espacial. Ela combina os campos da otologia (estudo do ouvido) e da neurologia (estudo do sistema nervoso) para abordar condições que afetam tanto a audição quanto o equilíbrio.
       </SpecialtySection>
-      <PathologySection />
       <ProceduresSection />
+      <PathologySection />
     </>
   );
 }
