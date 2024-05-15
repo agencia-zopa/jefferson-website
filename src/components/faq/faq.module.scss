@@ -1,7 +1,6 @@
 .buttonContainer {
-  background-color: #0476f7;
+  background-color: #ffffff;
   display: flex;
-  align-items: center;
   height: 70px;
   gap: 20px;
   padding-left: 30px;
@@ -10,20 +9,11 @@
   padding-bottom: 20px;
   border-radius: 50px;
   text-decoration: none;
-  transition: box-shadow 0.3s ease;
-}
-
-.buttonContainer.shadow {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.buttonContainer.shadow:hover {
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .buttonText {
   margin: auto;
-  color: #ffffff;
+  color: #0476f7;
   font-weight: bold;
   font-size: 20px;
 }
