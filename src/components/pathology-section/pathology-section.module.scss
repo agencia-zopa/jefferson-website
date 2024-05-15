@@ -3,7 +3,39 @@
   background-color: #ffffff;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .title {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1c294d;
+  text-decoration: underline;
+  text-decoration-color: #0476f7;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 5px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.cardsWrapper {
+  overflow-x: auto;
+}
+
+.cardsContainer {
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 90px;
+  display: inline-flex;
+}
+
+.seeAll {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #1c294d;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
 }
