@@ -1,0 +1,61 @@
+.cardContainer {
+  height: 236px;
+  width: 534px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.contentContainer {
+  display: flex;
+  padding: 30px;
+}
+
+.profilePic {
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profilePic span {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.reviewContainer {
+  padding-left: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #1c294d;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8b8b8b;
+  margin-left: 15px;
+}
+
+.review {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #8b8b8b;
+}
