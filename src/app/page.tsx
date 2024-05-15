@@ -7,6 +7,7 @@ import otoneuroImage from '@public/IMG_2621.jpg'
 
 import { PathologySection } from "@/components/pathology-section/pathology-section.component";
 import {ProceduresSection} from "@/components/procedures-section/procedures-section.component";
+import {ConveniosSection} from "@/components/convenios-section/convenios-section.component";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </SpecialtySection>
       <ProceduresSection />
       <PathologySection />
+      <ConveniosSection />
     </>
   );
 }
