@@ -1,10 +1,12 @@
 import { ScheduleAppointment } from "@/components/schedule-appointment/schedule-appointment.component";
 import styles from "./page.module.scss";
 import { FrequentlyAskedQuestions } from "@/components/faq/faq.component";
+import { AdressesBar } from "@/components/adresses-bar/adresses-bar.component";
 
 export default function Home() {
   return (
     <>
+      <AdressesBar />
       <div className={styles.initialSectionContainer}>
         <div className={styles.initialSectionContent}>
           <span className={styles.doctorName}>Dr. Jefferson André Bauer</span>
