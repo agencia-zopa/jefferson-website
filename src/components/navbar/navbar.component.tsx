@@ -75,7 +75,7 @@ export function Navbar() {
           Dúvidas
         </a>
       </div>
-      <div className={styles.button}>
+      <div>
         <ScheduleAppointment />
       </div>
     </nav>

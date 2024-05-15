@@ -1,12 +1,13 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 120px;
   background-color: #ffffff;
+  padding: 0 100px;
 }
 
 .about {
-  margin-left: 100px;
   display: flex;
   flex-direction: row;
 }
@@ -14,49 +15,57 @@
 .doctorName {
   font-size: 20px;
   font-weight: 800;
-  margin: auto;
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 18px;
+  line-height: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .doctorInfo {
-  margin: auto;
-  margin-left: 15px;
+  margin-left: 13px;
+  padding: 7px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
 }
 
 .specialization {
   font-size: 16px;
   font-weight: 800;
+  line-height: 16px;
 }
 
 .crm {
   font-size: 14px;
+  line-height: 10px;
 }
 
 .rqe {
   font-size: 14px;
+  line-height: 10px;
 }
 
 .navOptions {
   display: flex;
-  flex-direction: row;
-  margin: auto;
+  gap: 5px;
+  justify-content: center;
 }
 
 .navItem {
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #8b8b8b;
   font-weight: 500;
+  font-size: 20px;
   text-decoration: none;
 }
 
 .selected {
   font-weight: 800;
   color: #0476f7;
-}
-
-.button {
-  margin: auto;
-  margin-right: 100px;
 }
