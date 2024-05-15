@@ -76,7 +76,7 @@ export function Navbar() {
         </a>
       </div>
       <div>
-        <ScheduleAppointment />
+        <ScheduleAppointment hasShadow={true} />
       </div>
     </nav>
   );
