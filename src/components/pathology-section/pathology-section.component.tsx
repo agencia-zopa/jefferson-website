@@ -44,8 +44,8 @@ export function PathologySection() {
           />
         </div>
       </div>
-      <a href="#">
-        <p className={styles.seeAll}>Veja todas -&gt;</p>
+      <a className={styles.seeAll} href="#">
+        <p>Veja todas -&gt;</p>
       </a>
     </div>
   );
