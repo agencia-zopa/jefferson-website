@@ -5,6 +5,7 @@ import logoClinica from "@public/logo_clinica_otorrino-4.png";
 import pipe from "@public/divider.png";
 import { useState } from "react";
 import { ScheduleAppointment } from "../schedule-appointment/schedule-appointment.component";
+import {LogoWithDetails} from "@/components/logo-with-details/logo-with-details.component";
 
 export function Navbar() {
   const [selectedOption, setSelectedOption] = useState("apresentacao");
@@ -14,20 +15,7 @@ export function Navbar() {
   };
   return (
     <nav className={styles.container}>
-      <div className={styles.about}>
-        <Image src={logoClinica} alt={"Logotipo da cliníca"} />
-        <p className={styles.doctorName}>
-          Dr. Jefferson
-          <br />
-          André Bauer
-        </p>
-        <Image src={pipe} alt="" className={styles.pipe} />
-        <div className={styles.doctorInfo}>
-          <p className={styles.specialization}> Otorrino </p>
-          <p className={styles.crm}>CRM RS 35975</p>
-          <p className={styles.rqe}>RQE Nº: 27603</p>
-        </div>
-      </div>
+      <LogoWithDetails />
       <div className={styles.navOptions}>
         <a
           className={`${styles.navItem} ${
