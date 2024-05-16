@@ -1,0 +1,67 @@
+
+
+.faqSection {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+}
+
+.faqItemsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 110px;
+  row-gap: 60px;
+}
+
+.moreQuestions {
+  margin-top: 60px;
+  padding: 50px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+
+  border-radius: 30px;
+
+  background-color: #D1E2F6;
+
+  justify-self: stretch;
+  align-self: stretch;
+
+  h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+
+    color: #1C294D;
+  }
+
+  p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 175%;
+
+    color: #A1A1A2;
+  }
+
+  .cta {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+    justify-self: flex-end;
+  }
+}

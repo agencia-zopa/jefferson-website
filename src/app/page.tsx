@@ -10,6 +10,7 @@ import { ScheduleAppointmentSection } from "@/components/schedule-appointment-se
 import { ProceduresSection } from "@/components/procedures-section/procedures-section.component";
 import { ConveniosSection } from "@/components/convenios-section/convenios-section.component";
 import { ReviewsSection } from "@/components/reviews-section/reviews-section.component";
+import {FaqSection} from "@/components/faq-section/faq-section.component";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
       <ReviewsSection />
       <ScheduleAppointmentSection />
       <ConveniosSection />
+      <FaqSection />
     </>
   );
 }
