@@ -102,6 +102,7 @@ export default function ContactPage() {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text"
+              placeholder="Insira seu nome"
             />
             <div className={`${styles.error} ${touched.name && errors.name ? styles.visible : ''}`}>{errors.name}</div>
 
@@ -112,6 +113,7 @@ export default function ContactPage() {
               onChange={handleChange}
               onBlur={handleBlur}
               type="email"
+              placeholder="Insira seu melhor e-mail"
             />
             <div className={`${styles.error} ${touched.email && errors.email ? styles.visible : ''}`}>{errors.email}</div>
 
@@ -122,6 +124,7 @@ export default function ContactPage() {
               onChange={handleChange}
               onBlur={handleBlur}
               type="tel"
+              placeholder="Insira seu telefone"
             />
             <div className={`${styles.error} ${touched.phone && errors.phone ? styles.visible : ''}`}>{errors.phone}</div>
             <label>Assunto</label>
@@ -131,6 +134,7 @@ export default function ContactPage() {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text"
+              placeholder="Insira o assunto da mensagem"
             />
             <div className={`${styles.error} ${touched.subject && errors.subject ? styles.visible : ''}`}>{errors.subject}</div>
 
@@ -140,6 +144,7 @@ export default function ContactPage() {
               value={values.message}
               onChange={handleChange}
               onBlur={handleBlur}
+              placeholder="Escreva sua mensagem"
             />
             <div className={`${styles.error} ${touched.message && errors.message ? styles.visible : ''}`}>{errors.message}</div>
             <p>Seus dados serão armazenados de maneira segura e serão usado apenas com o objetivo de entrar em contato.</p>
