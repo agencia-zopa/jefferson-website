@@ -1,0 +1,44 @@
+.container {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.imageContainer {
+  height: 350px;
+  width: 100%;
+  background-color: #d1e2f6;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.title {
+  margin-top: 30px;
+  height: 99px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #1c294d;
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 30px;
+  height: 86px;
+  font-size: 24px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #a1a1a2;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.button {
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+}
