@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  flex-direction: row;
+
+  &.dark {
+    color: white;
+  }
+}
+
+.doctorName {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 15px;
+  margin-right: 18px;
+  line-height: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.doctorInfo {
+  margin-left: 13px;
+  padding: 7px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.specialization {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+.crm {
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.rqe {
+  font-size: 14px;
+  line-height: 10px;
+}

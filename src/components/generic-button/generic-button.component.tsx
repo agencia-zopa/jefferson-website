@@ -4,6 +4,7 @@ import styles from './generic-button.module.scss'
 import React from "react";
 
 export interface GenericButtonProps {
+  className?: string;
   text: string;
   href?: string;
   iconSrc?: StaticImport;
@@ -14,12 +15,12 @@ export interface GenericButtonProps {
   outline?: boolean;
 }
 
-export function GenericButton({text, iconSrc, iconAlt, href, backgroundColor, textColor, fill, outline}: GenericButtonProps) {
+export function GenericButton({className, text, iconSrc, iconAlt, href, backgroundColor, textColor, fill, outline}: GenericButtonProps) {
   // @ts-ignore
   const iconSrcStr = iconSrc !== undefined ? iconSrc.src ?? iconSrc.default.src : undefined;
 
   return <a
-    className={`${styles.genericButton} ${outline ? styles.outline : ''} ${fill ? styles.fill : ''}`}
+    className={`${styles.genericButton} ${outline ? styles.outline : ''} ${fill ? styles.fill : ''} ${className ?? ''}`}
     href={href}
     style={{'--background-color': backgroundColor, '--color': textColor} as React.CSSProperties}
   >
