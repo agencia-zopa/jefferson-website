@@ -8,7 +8,7 @@ import styles from './faq-section.module.scss';
 
 export function FaqSection() {
   return (
-    <div className={styles.faqSection}>
+    <div className={styles.faqSection} id={'faq'}>
       <SectionTitle>Perguntas Frequentes</SectionTitle>
       <div className={styles.faqItemsList}>
         <FaqItem

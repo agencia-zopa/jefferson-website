@@ -2,7 +2,7 @@ import styles from './presentation-section.module.scss';
 
 export function PresentationSection() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={'apresentacao'}>
       <div className={styles.imageContainer} />
       <div className={styles.contentContainer}>
         <div className={styles.title}>Dr. Jefferson André Bauer</div>

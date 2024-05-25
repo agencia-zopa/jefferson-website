@@ -12,6 +12,7 @@ export function Navbar() {
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
   };
+
   return (
     <nav className={styles.container}>
       <LogoWithDetails />
@@ -20,7 +21,7 @@ export function Navbar() {
           className={`${styles.navItem} ${
             selectedOption === 'apresentacao' ? styles.selected : ''
           }`}
-          href={'#'}
+          href={'#apresentacao'}
           onClick={() => handleOptionClick('apresentacao')}
         >
           Apresentação
@@ -38,7 +39,7 @@ export function Navbar() {
           className={`${styles.navItem} ${
             selectedOption === 'patologias' ? styles.selected : ''
           }`}
-          href={'#'}
+          href={'#patologias'}
           onClick={() => handleOptionClick('patologias')}
         >
           Patologias
@@ -47,7 +48,7 @@ export function Navbar() {
           className={`${styles.navItem} ${
             selectedOption === 'avaliacoes' ? styles.selected : ''
           }`}
-          href={'#'}
+          href={'#avaliacoes'}
           onClick={() => handleOptionClick('avaliacoes')}
         >
           Avaliações
@@ -56,7 +57,7 @@ export function Navbar() {
           className={`${styles.navItem} ${
             selectedOption === 'duvidas' ? styles.selected : ''
           }`}
-          href={'#'}
+          href={'#faq'}
           onClick={() => handleOptionClick('duvidas')}
         >
           Dúvidas

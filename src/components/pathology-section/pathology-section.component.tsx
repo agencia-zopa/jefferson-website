@@ -3,7 +3,7 @@ import styles from './pathology-section.module.scss';
 
 export function PathologySection() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={'patologias'}>
       <span className={styles.title}>Patologias</span>
       <div className={styles.cardsWrapper}>
         <div className={styles.cardsContainer}>

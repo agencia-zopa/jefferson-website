@@ -3,7 +3,7 @@ import styles from './reviews-section.module.scss';
 
 export function ReviewsSection() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={'avaliacoes'}>
       <span className={styles.title}>Algumas avaliações</span>
       <div className={styles.cardsContainer}>
         <ReviewCard
