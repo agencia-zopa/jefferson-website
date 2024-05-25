@@ -70,6 +70,7 @@ export function FaqSection() {
           backgroundColor={'#0476F7'}
           textColor={'white'}
           iconSrc={commentIcon}
+          href={'/contato'}
         />
       </div>
     </div>

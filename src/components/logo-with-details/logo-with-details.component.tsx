@@ -11,7 +11,7 @@ export function LogoWithDetails({ darkVersion = false }: LogoWithDetailsProps) {
   const darkModeClass = darkVersion ? styles.dark : '';
 
   return (
-    <div className={`${styles.about} ${darkModeClass}`.trim()}>
+    <a className={`${styles.about} ${darkModeClass}`.trim()} href={'/'}>
       <Image src={logoClinica} alt={''} />
       <p className={styles.name}>
         Dr. Jefferson
@@ -24,6 +24,6 @@ export function LogoWithDetails({ darkVersion = false }: LogoWithDetailsProps) {
         <span>CRM RS 35975</span>
         <span>RQE Nº: 27603</span>
       </div>
-    </div>
+    </a>
   );
 }
