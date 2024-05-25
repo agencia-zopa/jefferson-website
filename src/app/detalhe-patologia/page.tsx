@@ -1,5 +1,5 @@
+import { PresentationSection } from '@/components/introduction-section/introduction-section.component';
 import { PageTitle } from '@/components/page-title/page-title.component';
-import { PresentationSection } from '@/components/presentation-section/presentation-section.component';
 import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
 
 import styles from './page.module.scss';

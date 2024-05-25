@@ -2,7 +2,7 @@ import DoctorImage from '@public/IMG_2662.jpg';
 import Image from 'next/image';
 import React from 'react';
 
-import styles from './presentation-section.module.scss';
+import styles from './introduction-section.module.scss';
 
 export function PresentationSection() {
   return (
