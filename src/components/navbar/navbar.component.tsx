@@ -6,6 +6,11 @@ import { LogoWithDetails } from '@/components/logo-with-details/logo-with-detail
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
 import styles from './navbar.module.scss';
 
+interface NavItem {
+  label: string;
+  href: string;
+}
+
 export function Navbar() {
   const [selectedOption, setSelectedOption] = useState('apresentacao');
 
@@ -13,55 +18,32 @@ export function Navbar() {
     setSelectedOption(option);
   };
 
+  const navOptions: NavItem[] = [
+    { label: 'Apresentação', href: 'apresentacao' },
+    { label: 'Doenças', href: 'doencas' },
+    { label: 'Patologias', href: 'patologias' },
+    { label: 'Avaliações', href: 'avaliacoes' },
+    { label: 'Dúvidas', href: 'duvidas' }
+  ];
+
   return (
     <nav className={styles.container}>
       <LogoWithDetails />
-      <div className={styles.navOptions}>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'apresentacao' ? styles.selected : ''
-          }`}
-          href={'#apresentacao'}
-          onClick={() => handleOptionClick('apresentacao')}
-        >
-          Apresentação
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'doencas' ? styles.selected : ''
-          }`}
-          href={'#'}
-          onClick={() => handleOptionClick('doencas')}
-        >
-          Doenças
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'patologias' ? styles.selected : ''
-          }`}
-          href={'#patologias'}
-          onClick={() => handleOptionClick('patologias')}
-        >
-          Patologias
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'avaliacoes' ? styles.selected : ''
-          }`}
-          href={'#avaliacoes'}
-          onClick={() => handleOptionClick('avaliacoes')}
-        >
-          Avaliações
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'duvidas' ? styles.selected : ''
-          }`}
-          href={'#faq'}
-          onClick={() => handleOptionClick('duvidas')}
-        >
-          Dúvidas
-        </a>
+      <div className={styles.items}>
+        {navOptions.map(({ label, href }) => {
+          const isSelected = href === selectedOption;
+
+          return (
+            <a
+              key={href}
+              className={isSelected ? styles.selected : ''}
+              href={`#${href}`}
+              onClick={() => handleOptionClick(href)}
+            >
+              {label}
+            </a>
+          );
+        })}
       </div>
       <div>
         <ScheduleAppointment hasShadow={true} />
