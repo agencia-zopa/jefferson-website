@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dalfen.iml" filepath="$PROJECT_DIR$/.idea/dalfen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../smartcapex-website/.idea/smartcapex-website.iml" filepath="$PROJECT_DIR$/../smartcapex-website/.idea/smartcapex-website.iml" />
     </modules>
   </component>
 </project>
