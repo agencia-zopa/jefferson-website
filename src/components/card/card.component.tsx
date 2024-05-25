@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import styles from './card.module.scss';
 
-interface CardProps {
+export interface CardProps {
   title: string;
   text: string;
   imagePath: string;
