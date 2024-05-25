@@ -1,20 +1,16 @@
 .container {
-  height: 1025px;
-  background-color: hsl(0deg 0% 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  padding: 100px 0 100px 100px;
+  gap: 100px;
 
-.image-container {
-  height: 818px;
-  width: 825px;
-  background-image: url("/IMG_2662.jpg");
-  background-position: 50% 25%;
-  background-size: cover;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  flex-shrink: 0;
+  img {
+    max-width: 818px;
+    height: auto;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
 }
 
 .content {
@@ -22,7 +18,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  margin: 100px;
 }
 
 .title {
@@ -37,7 +32,6 @@
 .text {
   font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 500;
   font-size: 28px;
   line-height: 45px;
   color: #8b8b8b;
