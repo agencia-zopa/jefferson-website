@@ -6,20 +6,27 @@ import styles from './pathology-card.module.scss';
 interface CardProps {
   title: string;
   text: string;
-  imagePath: string;
+  imageUrl: string;
+  fullArticleUrl: string;
 }
 
-export function PathologyCard({ title, text, imagePath }: CardProps) {
+export function PathologyCard({
+  title,
+  text,
+  imageUrl,
+  fullArticleUrl
+}: CardProps) {
   return (
     <div className={styles.container}>
       <div
         className={styles.imageContainer}
-        style={{ backgroundImage: `url(${imagePath})` }}
+        style={{ backgroundImage: `url(${imageUrl})` }}
       />
       <div className={styles.title}>{title}</div>
       <div className={styles.text}>{text}</div>
       <GenericButton
         text={'Ver Artigo'}
+        href={fullArticleUrl}
         backgroundColor={'#0476F7'}
         textColor={'#0476F7'}
         iconSrc={bookIcon}

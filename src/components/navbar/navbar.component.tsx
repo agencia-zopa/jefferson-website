@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
 
 import { SectionIDs } from '@/app/section-ids';
 import { LogoWithDetails } from '@/components/logo-with-details/logo-with-details.component';
@@ -13,19 +14,34 @@ interface NavItem {
 }
 
 export function Navbar() {
-  const [selectedOption, setSelectedOption] = useState('apresentacao');
+  const currentPath = usePathname();
+  const [selectedOption, setSelectedOption] = useState<string>();
 
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
   };
 
-  const navOptions: NavItem[] = [
-    { label: 'Apresentação', href: SectionIDs.INTRODUCTION },
-    { label: 'Doenças', href: SectionIDs.DISEASES },
-    { label: 'Patologias', href: SectionIDs.PATHOLOGIES },
-    { label: 'Avaliações', href: SectionIDs.REVIEWS },
-    { label: 'Dúvidas', href: SectionIDs.FAQ }
-  ];
+  const navOptions: NavItem[] = useMemo(
+    () => [
+      { label: 'Apresentação', href: '/#' + SectionIDs.INTRODUCTION },
+      { label: 'Doenças', href: '/#' + SectionIDs.DISEASES },
+      { label: 'Patologias', href: '/patologias' },
+      { label: 'Avaliações', href: '/#' + SectionIDs.REVIEWS },
+      { label: 'Dúvidas', href: '/#' + SectionIDs.FAQ }
+    ],
+    []
+  );
+
+  // FIXME: This has a delay in updating the selected option - maybe go for another approach
+  useEffect(() => {
+    const matchingOption = navOptions.find(
+      option => option.href === currentPath
+    );
+
+    if (matchingOption) {
+      setSelectedOption(matchingOption.href);
+    }
+  }, [currentPath, navOptions]);
 
   return (
     <nav className={styles.container}>
@@ -38,7 +54,7 @@ export function Navbar() {
             <a
               key={href}
               className={isSelected ? styles.selected : ''}
-              href={`#${href}`}
+              href={href}
               onClick={() => handleOptionClick(href)}
             >
               {label}
