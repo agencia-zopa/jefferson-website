@@ -1,5 +1,6 @@
 import commentIcon from '@public/comment-01.svg';
 
+import { SectionIDs } from '@/app/section-ids';
 import { FaqItem } from '@/components/faq-item/faq-item.component';
 import { GenericButton } from '@/components/generic-button/generic-button.component';
 import { SectionTitle } from '@/components/section-title/section-title.component';
@@ -8,7 +9,7 @@ import styles from './faq-section.module.scss';
 
 export function FaqSection() {
   return (
-    <div className={styles.faqSection} id={'faq'}>
+    <div className={styles.faqSection} id={SectionIDs.FAQ}>
       <SectionTitle>Perguntas Frequentes</SectionTitle>
       <div className={styles.faqItemsList}>
         <FaqItem

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 
+import { SectionIDs } from '@/app/section-ids';
 import { LogoWithDetails } from '@/components/logo-with-details/logo-with-details.component';
 
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
@@ -19,11 +20,11 @@ export function Navbar() {
   };
 
   const navOptions: NavItem[] = [
-    { label: 'Apresentação', href: 'apresentacao' },
-    { label: 'Doenças', href: 'doencas' },
-    { label: 'Patologias', href: 'patologias' },
-    { label: 'Avaliações', href: 'avaliacoes' },
-    { label: 'Dúvidas', href: 'duvidas' }
+    { label: 'Apresentação', href: SectionIDs.INTRODUCTION },
+    { label: 'Doenças', href: SectionIDs.DISEASES },
+    { label: 'Patologias', href: SectionIDs.PATHOLOGIES },
+    { label: 'Avaliações', href: SectionIDs.REVIEWS },
+    { label: 'Dúvidas', href: SectionIDs.FAQ }
   ];
 
   return (

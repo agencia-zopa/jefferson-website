@@ -2,11 +2,13 @@ import DoctorImage from '@public/IMG_2662.jpg';
 import Image from 'next/image';
 import React from 'react';
 
+import { SectionIDs } from '@/app/section-ids';
+
 import styles from './introduction-section.module.scss';
 
 export function PresentationSection() {
   return (
-    <div className={styles.container} id={'apresentacao'}>
+    <div className={styles.container} id={SectionIDs.INTRODUCTION}>
       <Image src={DoctorImage} alt={''} />
       <div className={styles.content}>
         <h1>Dr. Jefferson André Bauer</h1>
@@ -18,6 +20,7 @@ export function PresentationSection() {
         </p>
         <div className={styles.divider} />
         <h1>Formação</h1>
+
         <ul>
           <li>
             - Mestrado em Cirurgia, Universidade Federal do Rio Grande do Sul,

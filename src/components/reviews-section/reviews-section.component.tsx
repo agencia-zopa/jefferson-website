@@ -1,3 +1,4 @@
+import { SectionIDs } from '@/app/section-ids';
 import { Review, ReviewProps } from '@/components/review/review.component';
 import { SectionTitle } from '@/components/section-title/section-title.component';
 
@@ -44,7 +45,7 @@ const reviews: ReviewProps[] = [
 
 export function ReviewsSection() {
   return (
-    <div className={styles.container} id={'avaliacoes'}>
+    <div className={styles.container} id={SectionIDs.REVIEWS}>
       <SectionTitle>Algumas avaliações</SectionTitle>
       <div className={styles.grid}>
         {reviews.map((review, index) => (

@@ -1,4 +1,3 @@
-import pipe from '@public/divider.png';
 import logoClinica from '@public/logo_clinica_otorrino-4.png';
 import Image from 'next/image';
 
@@ -8,20 +7,22 @@ export interface LogoWithDetailsProps {
   darkVersion?: boolean;
 }
 
-export function LogoWithDetails({ darkVersion }: LogoWithDetailsProps) {
+export function LogoWithDetails({ darkVersion = false }: LogoWithDetailsProps) {
+  const darkModeClass = darkVersion ? styles.dark : '';
+
   return (
-    <div className={`${styles.about} ${darkVersion ? styles.dark : ''}`}>
-      <Image src={logoClinica} alt={'Logotipo da cliníca'} />
-      <p className={styles.doctorName}>
+    <div className={`${styles.about} ${darkModeClass}`.trim()}>
+      <Image src={logoClinica} alt={''} />
+      <p className={styles.name}>
         Dr. Jefferson
         <br />
         André Bauer
       </p>
-      <Image src={pipe} alt={''} className={styles.pipe} />
-      <div className={styles.doctorInfo}>
-        <p className={styles.specialization}> Otorrino </p>
-        <p className={styles.crm}>CRM RS 35975</p>
-        <p className={styles.rqe}>RQE Nº: 27603</p>
+      <div className={`${styles.pipe} ${darkModeClass}`.trim()} />
+      <div className={styles.info}>
+        <span>Otorrino</span>
+        <span>CRM RS 35975</span>
+        <span>RQE Nº: 27603</span>
       </div>
     </div>
   );

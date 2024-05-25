@@ -4,6 +4,7 @@ import 'swiper/scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { SectionIDs } from '@/app/section-ids';
 import { SectionTitle } from '@/components/section-title/section-title.component';
 
 import { Card, CardProps } from '../card/card.component';
@@ -44,7 +45,7 @@ const cards: CardProps[] = [
 
 export function PathologySection() {
   return (
-    <div className={styles.container} id={'patologias'}>
+    <div className={styles.container} id={SectionIDs.PATHOLOGIES}>
       <SectionTitle>Patologias</SectionTitle>
       <Swiper
         className={styles.swiper}
