@@ -8,13 +8,15 @@ interface CardProps {
   text: string;
   imageUrl: string;
   fullArticleUrl: string;
+  outline?: boolean;
 }
 
 export function PathologyCard({
   title,
   text,
   imageUrl,
-  fullArticleUrl
+  fullArticleUrl,
+  outline = true
 }: CardProps) {
   return (
     <div className={styles.container}>
@@ -28,9 +30,9 @@ export function PathologyCard({
         text={'Ver Artigo'}
         href={fullArticleUrl}
         backgroundColor={'#0476F7'}
-        textColor={'#0476F7'}
+        textColor={outline ? '#0476F7' : 'white'}
         iconSrc={bookIcon}
-        outline={true}
+        outline={outline}
         className={styles.button}
       />
     </div>

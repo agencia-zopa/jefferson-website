@@ -2,46 +2,16 @@
 
 import 'swiper/scss';
 
+import ArrowRight from '@public/arrow-right.svg';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { pathologies } from '@/app/patologias/[name]/pathologies';
 import { SectionIDs } from '@/app/section-ids';
+import { PathologyCard } from '@/components/pathology-card/pathology-card.component';
 import { SectionTitle } from '@/components/section-title/section-title.component';
 
-import { Card, CardProps } from '../card/card.component';
 import styles from './pathology-section.module.scss';
-
-const cards: CardProps[] = [
-  {
-    title: 'Manobras de reposicionamento para VPPB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat?',
-    imagePath: '/IMG_2646.jpg'
-  },
-  {
-    title: 'Manobras de reposicionamento para VPPB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat?',
-    imagePath: ''
-  },
-  {
-    title: 'Manobras de reposicionamento para VPPB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat?',
-    imagePath: ''
-  },
-  {
-    title: 'Manobras de reposicionamento para VPPB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat?',
-    imagePath: ''
-  },
-  {
-    title: 'Manobras de reposicionamento para VPPB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat?',
-    imagePath: ''
-  },
-  {
-    title: 'Manobras de reposicionamento para VPPB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat?',
-    imagePath: ''
-  }
-];
 
 export function PathologySection() {
   return (
@@ -53,15 +23,20 @@ export function PathologySection() {
         spaceBetween={30}
       >
         {/* FIXME: This is not well defined, we need to play around with slidesPerView and the width of styles.slide to find the optimal size https://swiperjs.com/demos#slides-per-view-auto */}
-        {cards.map(({ title, text, imagePath }, idx) => (
+        {pathologies.map((pathology, idx) => (
           <SwiperSlide key={idx} className={styles.slide}>
-            <Card title={title} text={text} imagePath={imagePath} />
+            <PathologyCard
+              title={pathology.name}
+              text={pathology.shortDescription}
+              imageUrl={pathology.imageUrl}
+              fullArticleUrl={pathology.urls[0]}
+              outline={false}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
-      <a className={styles.seeAll} href={'#'}>
-        {/* FIXME: Use a SVG for the arrow */}
-        Veja todas -&gt;
+      <a className={styles.seeAll} href={'/patologias'}>
+        Veja todas <Image src={ArrowRight} alt={''} />
       </a>
     </div>
   );

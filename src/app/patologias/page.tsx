@@ -1,15 +1,14 @@
 import { pathologies } from '@/app/patologias/[name]/pathologies';
+import { PageTitle } from '@/components/page-title/page-title.component';
 import { PathologyCard } from '@/components/pathology-card/pathology-card.component';
 
 import styles from './page.module.scss';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <div className={styles.sectionTitle}>
-        <span>Patologias</span>
-      </div>
-      <div className={styles.cardsContainer}>
+    <div>
+      <PageTitle>Patologias</PageTitle>
+      <div className={styles.cards}>
         {pathologies.map((pathology, index) => (
           <PathologyCard
             key={index}

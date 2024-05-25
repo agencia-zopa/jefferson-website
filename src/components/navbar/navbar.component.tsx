@@ -62,9 +62,7 @@ export function Navbar() {
           );
         })}
       </div>
-      <div>
-        <ScheduleAppointment hasShadow={true} />
-      </div>
+      <ScheduleAppointment hasShadow={true} />
     </nav>
   );
 }
