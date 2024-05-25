@@ -1,20 +1,20 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 
-import scssBreakpoints from '@/breakpoints.module.scss';
-import {useWindowEvent} from "@/hooks/use-window-event";
+import scssBreakpoints from '@/app/breakpoints.module.scss';
+import { useWindowEvent } from '@/hooks/use-window-event';
 
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg';
-type Breakpoints = Record<Breakpoint, Range>;
-type Range = {
-  min: number;
-  max: number;
-}
 
-export const breakpoints = Object.fromEntries(Object.entries(scssBreakpoints).map(([name, value]) => [name, parseInt(value.slice(0, -2))])) as unknown as {
-  [key in Breakpoint as `${key}-min`]: number; } & {
+export const breakpoints = Object.fromEntries(
+  Object.entries(scssBreakpoints).map(([name, value]) => [
+    name,
+    parseInt(value.slice(0, -2))
+  ])
+) as unknown as {
+  [key in Breakpoint as `${key}-min`]: number;
+} & {
   [key in Breakpoint as `${key}-max`]: number;
 };
-
 
 export type UseBreakpointsOut = {
   [key in Breakpoint as `${key}AndDown`]: boolean;
@@ -52,16 +52,19 @@ export function useBreakpoints(): UseBreakpointsOut {
   return value;
 }
 
-export function useSpecificBreakpoint(type: 'gte' | 'lte',breakpoint: number): boolean {
+export function useSpecificBreakpoint(
+  type: 'gte' | 'lte',
+  breakpoint: number
+): boolean {
   const [value, setValue] = useState<boolean>(false);
 
   const handleResize = useCallback(() => {
     setValue(
       type === 'gte'
-      ? window.innerWidth >= breakpoint
-      : window.innerWidth <= breakpoint
+        ? window.innerWidth >= breakpoint
+        : window.innerWidth <= breakpoint
     );
-  }, []);
+  }, [breakpoint, type]);
 
   useWindowEvent('resize', handleResize, { initialize: true });
 

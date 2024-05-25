@@ -1,24 +1,22 @@
-import {NextRequest, NextResponse} from "next/server";
-import nodemailer from 'nodemailer'
-import z from 'zod'
+import { NextRequest, NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
+import z from 'zod';
 
 const bodySchema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
   phone: z.string().optional(),
   subject: z.string().min(1),
-  message: z.string().min(1),
-})
+  message: z.string().min(1)
+});
 
 export async function POST(request: NextRequest) {
   const parseResult = await bodySchema.safeParseAsync(await request.json());
   if (!parseResult.success) {
     return new NextResponse(null, {
       status: 400
-    })
+    });
   }
-
-  const body = parseResult.data;
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -31,7 +29,7 @@ export async function POST(request: NextRequest) {
     }
   });
 
-  const result = await transporter.verify();
+  await transporter.verify();
 
   // await transporter.sendMail({
   //   from: process.env.MAIL_FROM,
@@ -65,5 +63,5 @@ export async function POST(request: NextRequest) {
 
   return new NextResponse(null, {
     status: 201
-  })
+  });
 }

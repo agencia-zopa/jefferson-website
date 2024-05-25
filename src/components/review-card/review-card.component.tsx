@@ -1,6 +1,7 @@
-import Image from "next/image";
-import styles from "./review-card.module.scss";
-import rating from "@public/stars.svg";
+import rating from '@public/stars.svg';
+import Image from 'next/image';
+
+import styles from './review-card.module.scss';
 
 interface ReviewCardProps {
   ReviewerName: string;
@@ -15,7 +16,7 @@ export function ReviewCard({
   ReviewDate,
   ReviewText,
   ProfilePicColor,
-  FirstLetter,
+  FirstLetter
 }: ReviewCardProps) {
   return (
     <div className={styles.cardContainer}>
@@ -29,7 +30,7 @@ export function ReviewCard({
         <div className={styles.reviewContainer}>
           <span className={styles.name}>{ReviewerName}</span>
           <div className={styles.rating}>
-            <Image src={rating} alt="" />
+            <Image src={rating} alt={''} />
             <span>{ReviewDate}</span>
           </div>
           <span className={styles.review}>{ReviewText}</span>

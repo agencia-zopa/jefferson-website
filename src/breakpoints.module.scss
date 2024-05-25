@@ -1,3 +1,4 @@
+/* stylelint-disable scss/no-global-function-names */
 $xs-max: 700px;
 
 $sm-min: 700px;
@@ -9,31 +10,30 @@ $md-max: 1440px;
 $lg-min: 1440px;
 
 $breakpoints: (
-    xs: (
-        min: 0,
-        max: $xs-max
-    ),
-    sm: (
-        min: $sm-min,
-        max: $sm-max
-    ),
-    md: (
-        min: $md-min,
-        max: $md-max
-    ),
-    lg: (
-        min: $lg-min,
-        max: 99999px
-    )
+  xs: (
+    min: 0,
+    max: $xs-max,
+  ),
+  sm: (
+    min: $sm-min,
+    max: $sm-max,
+  ),
+  md: (
+    min: $md-min,
+    max: $md-max,
+  ),
+  lg: (
+    min: $lg-min,
+    max: 99999px,
+  ),
 );
 
 @mixin at-or-smaller-than($breakpoint) {
   @if map-get($breakpoints, $breakpoint) {
-    @media only screen and (max-width: map-get(map-get($breakpoints, $breakpoint), 'max')) {
+    @media only screen and (max-width: map-get(map-get($breakpoints, $breakpoint), "max")) {
       @content;
     }
-  }
-  @else {
+  } @else {
     @media only screen and (max-width: $breakpoint) {
       @content;
     }
@@ -41,14 +41,14 @@ $breakpoints: (
 }
 
 @mixin at-or-bigger-than($breakpoint) {
-  @media only screen and (min-width: map-get(map-get($breakpoints, $breakpoint), 'min')) {
-      @content;
+  @media only screen and (min-width: map-get(map-get($breakpoints, $breakpoint), "min")) {
+    @content;
   }
 }
 
 :export {
   @each $breakpoint, $value in $breakpoints {
-    #{$breakpoint}-max: map-get($value, 'max');
-    #{$breakpoint}-min: map-get($value, 'min');
+    #{$breakpoint}-max: map-get($value, "max");
+    #{$breakpoint}-min: map-get($value, "min");
   }
-};
+}

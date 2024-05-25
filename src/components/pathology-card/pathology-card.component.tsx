@@ -1,7 +1,7 @@
-import styles from "./pathology-card.module.scss";
-import Image from "next/image";
-import bookIcon from "@public/book-open-02.svg";
-import { GenericButton } from "../generic-button/generic-button.component";
+import bookIcon from '@public/book-open-02.svg';
+
+import { GenericButton } from '../generic-button/generic-button.component';
+import styles from './pathology-card.module.scss';
 
 interface CardProps {
   title: string;
@@ -15,13 +15,13 @@ export function PathologyCard({ title, text, imagePath }: CardProps) {
       <div
         className={styles.imageContainer}
         style={{ backgroundImage: `url(${imagePath})` }}
-      ></div>
+      />
       <div className={styles.title}>{title}</div>
       <div className={styles.text}>{text}</div>
       <GenericButton
-        text={"Ver Artigo"}
-        backgroundColor={"#0476F7"}
-        textColor={"#0476F7"}
+        text={'Ver Artigo'}
+        backgroundColor={'#0476F7'}
+        textColor={'#0476F7'}
         iconSrc={bookIcon}
         outline={true}
         className={styles.button}

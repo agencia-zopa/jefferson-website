@@ -1,18 +1,18 @@
-import styles from "./presentation-section.module.scss";
+import styles from './presentation-section.module.scss';
 
 export function PresentationSection() {
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}></div>
+      <div className={styles.imageContainer} />
       <div className={styles.contentContainer}>
         <div className={styles.title}>Dr. Jefferson André Bauer</div>
-        <div className={styles.divider}></div>
+        <div className={styles.divider} />
         <div className={styles.text}>
           Otorrinolaringologista com mais de 5 anos de experiência especializado
           em Otologia Cirúrgica, Otologia Clínica, Otoneurologia. O meu número
           de registro profissional: 35975.
         </div>
-        <div className={styles.divider}></div>
+        <div className={styles.divider} />
         <div className={styles.title}>Formação</div>
         <ul className={styles.text}>
           <li>

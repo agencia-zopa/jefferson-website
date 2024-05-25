@@ -1,6 +1,7 @@
-import styles from "./card.module.scss";
-import Image from "next/image";
-import bookIcon from "@public/book-open-01.svg";
+import bookIcon from '@public/book-open-01.svg';
+import Image from 'next/image';
+
+import styles from './card.module.scss';
 
 interface CardProps {
   title: string;
@@ -14,15 +15,15 @@ export function Card({ title, text, imagePath }: CardProps) {
       <div
         className={styles.imageContainer}
         style={{ backgroundImage: `url(${imagePath})` }}
-      ></div>
+      />
       <div className={styles.title}>{title}</div>
       <div className={styles.text}>{text}</div>
-      <a className={styles.buttonContainer} href="#">
+      <a className={styles.buttonContainer} href={'#'}>
         <p className={styles.buttonText}>Ver Artigo</p>
         <Image
           className={styles.buttonIcon}
           src={bookIcon}
-          alt={"Ícone de comentário"}
+          alt={'Ícone de comentário'}
         />
       </a>
     </div>

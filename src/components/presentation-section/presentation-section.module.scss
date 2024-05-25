@@ -1,6 +1,6 @@
 .container {
   height: 1025px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0deg 0% 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,6 @@
 }
 
 .contentContainer {
-  margin: auto;
   flex: 1;
   margin: 100px;
 }
@@ -31,7 +30,7 @@
 }
 
 .text {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 45px;
@@ -44,5 +43,5 @@
   margin-bottom: 30px;
   width: 93px;
   height: 1px;
-  border-bottom: 1px solid rgba(89, 89, 89, 0.5);
+  border-bottom: 1px solid rgb(89 89 89 / 50%);
 }
