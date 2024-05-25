@@ -18,22 +18,22 @@
   margin-bottom: 60px;
 }
 
-.cardsWrapper {
+.cards-wrapper {
   overflow-x: auto;
 }
 
-.cardsContainer {
+.cards-container {
   padding-left: 100px;
   padding-right: 100px;
   gap: 90px;
   display: inline-flex;
 }
 
-.seeAll {
+.see-all {
   text-decoration: none;
 }
 
-.seeAll p {
+.see-all p {
   font-size: 24px;
   line-height: 40px;
   font-weight: 800;

@@ -1,14 +1,10 @@
-/* stylelint-disable scss/no-global-function-names */
+/* stylelint-disable scss/no-global-function-names, selector-pseudo-class-no-unknown */
 $xs-max: 700px;
-
 $sm-min: 700px;
 $sm-max: 960px;
-
 $md-min: 960px;
 $md-max: 1440px;
-
 $lg-min: 1440px;
-
 $breakpoints: (
   xs: (
     min: 0,

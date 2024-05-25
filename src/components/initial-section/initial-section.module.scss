@@ -1,4 +1,4 @@
-.initialSectionContainer {
+.initial-section-container {
   width: 100%;
   height: 735px;
   display: flex;
@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.initialSectionContent {
+.initial-section-content {
   width: 780px;
   margin-left: 100px;
   height: auto;
@@ -19,14 +19,14 @@
   gap: 30px;
 }
 
-.doctorName {
+.doctor-name {
   font-size: 100px;
   font-weight: 800;
   color: #fff;
   line-height: 100px;
 }
 
-.doctorBio {
+.doctor-bio {
   font-family: Inter, sans-serif;
   font-size: 28px;
   font-weight: 500;
@@ -39,7 +39,7 @@
   gap: 30px;
 }
 
-.mouseIcon {
+.mouse-icon {
   position: absolute;
   bottom: 40px;
   left: 49%;

@@ -1,4 +1,4 @@
-.buttonContainer {
+.button-container {
   background-color: #0476f7;
   display: flex;
   align-items: center;
@@ -10,21 +10,21 @@
   transition: box-shadow 0.3s ease;
 }
 
-.buttonContainer.shadow {
+.button-container.shadow {
   box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
 }
 
-.buttonContainer.shadow:hover {
+.button-container.shadow:hover {
   box-shadow: 0 6px 6px rgb(0 0 0 / 40%);
 }
 
-.buttonText {
+.button-text {
   margin: auto;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
 }
 
-.buttonIcon {
+.button-icon {
   margin: auto;
 }

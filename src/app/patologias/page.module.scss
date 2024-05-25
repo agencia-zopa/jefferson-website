@@ -1,8 +1,10 @@
+// FIXME: Remove this disable and fix this shit
+/* stylelint-disable declaration-block-no-shorthand-property-overrides */
 .container {
   background-color: #fff;
 }
 
-.sectionTitle {
+.section-title {
   height: 120px;
   padding: 0;
   padding-left: 100px;
@@ -13,13 +15,13 @@
   background-color: #0476f7;
 }
 
-.sectionTitle span {
+.section-title span {
   font-size: 32px;
   font-weight: 800;
   color: #fff;
 }
 
-.cardsContainer {
+.cards-container {
   padding: 150px;
   margin: 0 auto;
   display: flex;
