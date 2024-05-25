@@ -1,10 +1,9 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-import Image from 'next/image';
+import Image, { ImageProps } from 'next/image';
 
 import styles from './procedure-item.module.scss';
 
 export interface ProcedureItemProps {
-  imageSrc: StaticImport;
+  imageSrc: ImageProps['src'];
   title: string;
   subtitle: string;
 }
