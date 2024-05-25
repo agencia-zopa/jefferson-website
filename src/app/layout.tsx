@@ -18,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={'pt-br'}>
-      <Navbar />
-      {children}
-      <Footer />
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
