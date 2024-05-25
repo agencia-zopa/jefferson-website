@@ -2,7 +2,7 @@ import otoneuroImage from '@public/IMG_2621.jpg';
 import otologiaImage from '@public/IMG_2636.jpg';
 import React from 'react';
 
-import { AddressesBar } from '@/components/addresses-bar/adresses-bar.component';
+import { AddressBar } from '@/components/address-bar/adresses-bar.component';
 import { ConveniosSection } from '@/components/convenios-section/convenios-section.component';
 import { FaqSection } from '@/components/faq-section/faq-section.component';
 import { InitialSection } from '@/components/initial-section/initial-section.component';
@@ -16,7 +16,7 @@ import { SpecialtySection } from '@/components/specialty-section/specialty-secti
 export default function Home() {
   return (
     <>
-      <AddressesBar />
+      <AddressBar />
       <InitialSection />
       <PresentationSection />
       <SpecialtySection
