@@ -15,7 +15,7 @@
   font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 40px;
   color: #1c294d;
 }
@@ -30,7 +30,7 @@
   font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 40px;
 
   &::placeholder {
@@ -48,7 +48,7 @@
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 185%;
   color: #a1a1a2;
 }
@@ -64,7 +64,7 @@
   font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
   color: #fff;
   cursor: pointer;
@@ -73,7 +73,7 @@
 .contact-form .error {
   margin-top: 12px;
   color: red;
-  font-size: 18px;
+  font-size: 1.125rem;
   opacity: 0;
 
   &.visible {

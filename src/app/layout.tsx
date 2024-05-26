@@ -8,7 +8,7 @@ import { Navbar } from '@/components/navbar/navbar.component';
 
 export const metadata: Metadata = {
   title: 'Teste',
-  subtitle: ''
+  description: ''
 };
 
 export default function RootLayout({
