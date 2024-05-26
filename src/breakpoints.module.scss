@@ -25,7 +25,7 @@ $breakpoints: (
 );
 
 @mixin at-or-smaller-than($breakpoint) {
-  @if map-get($breakpoints, $breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
     @media only screen and (max-width: map-get(map-get($breakpoints, $breakpoint), "max")) {
       @content;
     }
@@ -37,8 +37,17 @@ $breakpoints: (
 }
 
 @mixin at-or-bigger-than($breakpoint) {
-  @media only screen and (min-width: map-get(map-get($breakpoints, $breakpoint), "min")) {
-    @content;
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and (min-width: map-get(map-get($breakpoints, $breakpoint), "min")) {
+      @content;
+    }
+    /* stylelint-disable-next-line */
+  } @else if type-of($breakpoint) =="number" or type-of($breakpoint) == "string" {
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @error "#{$breakpoint} is not a valid breakpoint in the $breakpoints map.";
   }
 }
 

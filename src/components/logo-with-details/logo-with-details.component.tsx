@@ -5,9 +5,13 @@ import styles from './logo-with-details.module.scss';
 
 export interface LogoWithDetailsProps {
   darkVersion?: boolean;
+  hideDetails?: boolean;
 }
 
-export function LogoWithDetails({ darkVersion = false }: LogoWithDetailsProps) {
+export function LogoWithDetails({
+  darkVersion = false,
+  hideDetails = false
+}: LogoWithDetailsProps) {
   const darkModeClass = darkVersion ? styles.dark : '';
 
   return (
@@ -18,12 +22,16 @@ export function LogoWithDetails({ darkVersion = false }: LogoWithDetailsProps) {
         <br />
         André Bauer
       </p>
-      <div className={`${styles.pipe} ${darkModeClass}`.trim()} />
-      <div className={styles.info}>
-        <span>Otorrino</span>
-        <span>CRM RS 35975</span>
-        <span>RQE Nº: 27603</span>
-      </div>
+      {!hideDetails && (
+        <>
+          <div className={`${styles.pipe} ${darkModeClass}`.trim()} />
+          <div className={styles.info}>
+            <span>Otorrino</span>
+            <span>CRM RS 35975</span>
+            <span>RQE Nº: 27603</span>
+          </div>
+        </>
+      )}
     </a>
   );
 }

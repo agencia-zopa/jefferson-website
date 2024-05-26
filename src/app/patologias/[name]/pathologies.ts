@@ -24,7 +24,7 @@ export const pathologies: Pathology[] = [
 A exposição prolongada a ruídos intensos, como em ambientes de trabalho barulhentos ou durante a prática de hobbies como ouvir música alta através de fones de ouvido, também pode levar à perda auditiva. Essa condição, chamada de perda auditiva induzida por ruído, é cumulativa e muitas vezes irreversível, destacando a importância do uso de proteção auditiva em ambientes ruidosos. Traumas físicos na cabeça ou no ouvido podem danificar as estruturas auditivas e resultar em perda auditiva súbita ou gradual.
 
 Além disso, várias condições médicas podem contribuir para a perda auditiva. Infecções do ouvido, otosclerose (crescimento anormal de osso no ouvido médio), e doenças autoimunes são exemplos de fatores que podem afetar a audição. A identificação precoce e o tratamento adequado dessas condições são essenciais para minimizar os impactos na qualidade de vida dos indivíduos afetados.`,
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['surdez-infantil'],
@@ -37,7 +37,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Infecções como otite média, meningite ou sarampo durante a infância podem causar perda auditiva adquirida. Além disso, traumatismos na cabeça ou exposição a ruídos altos também podem afetar a audição das crianças. A identificação precoce desses fatores e o tratamento adequado são fundamentais para prevenir a progressão da perda auditiva e suas consequências no desenvolvimento educacional e social da criança.\n' +
       '\n' +
       'O uso de aparelhos auditivos, implantes cocleares e outras tecnologias assistivas, juntamente com terapias de reabilitação auditiva e de fala, pode ajudar crianças com perda auditiva a desenvolver habilidades de comunicação eficazes. O apoio educacional especializado e a inclusão em ambientes de aprendizado adaptados são igualmente importantes para garantir que essas crianças alcancem seu pleno potencial.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['otosclerose'],
@@ -50,7 +50,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Os sintomas da otosclerose geralmente começam na idade adulta jovem e podem incluir perda auditiva gradual, zumbido (tinnitus) e, ocasionalmente, vertigem. A perda auditiva tende a ser bilateral, afetando ambos os ouvidos, mas pode começar em um ouvido antes de progredir para o outro. À medida que a doença avança, a perda auditiva pode se tornar significativa, afetando a qualidade de vida e a capacidade de comunicação do indivíduo.\n' +
       '\n' +
       'O tratamento da otosclerose pode incluir o uso de aparelhos auditivos para amplificar o som ou, em casos mais graves, cirurgia para substituir o estribo afetado por uma prótese, procedimento conhecido como estapedectomia. Em alguns casos, medicamentos como fluoreto de sódio são utilizados para tentar retardar a progressão da doença. A avaliação e o acompanhamento por um otorrinolaringologista são essenciais para o manejo adequado da otosclerose.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['otite-media-aguda'],
@@ -63,7 +63,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'O diagnóstico de otite média aguda é geralmente clínico, baseado na história médica e no exame físico, incluindo a otoscopia, que permite visualizar a inflamação e a presença de fluido no ouvido médio. A maioria dos casos de otite média aguda resolve-se espontaneamente, mas o tratamento pode incluir analgésicos para alívio da dor e, em casos selecionados, antibióticos para combater a infecção bacteriana. A decisão de usar antibióticos depende da gravidade dos sintomas, da idade da criança e da presença de fatores de risco.\n' +
       '\n' +
       'Complicações da otite média aguda, embora raras, podem incluir mastoidite (infecção do osso mastoide), meningite e perda auditiva permanente. Por isso, é importante monitorar a evolução da doença e seguir as orientações médicas. A prevenção pode incluir medidas como vacinas contra patógenos comuns, como o Streptococcus pneumoniae e o Haemophilus influenzae, e a promoção de aleitamento materno, que oferece proteção imunológica adicional.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['otite-media-cronica'],
@@ -76,7 +76,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Os sintomas da otite média crônica incluem otorreia (drenagem de líquido pelo ouvido), perda auditiva progressiva e, ocasionalmente, dor de ouvido e zumbido. A perda auditiva pode variar de leve a severa, dependendo do grau de dano às estruturas auditivas. Em alguns casos, pode ocorrer o desenvolvimento de colesteatoma, uma massa anormal de tecido que pode causar erosão óssea e aumentar o risco de complicações graves.\n' +
       '\n' +
       'O tratamento da otite média crônica pode incluir a administração de antibióticos tópicos ou sistêmicos, limpeza do ouvido e, em casos mais severos, cirurgia para reparar o tímpano ou drenar a infecção. Procedimentos como a timpanoplastia ou a mastoidectomia podem ser necessários para restaurar a integridade do ouvido médio e prevenir complicações futuras. O acompanhamento regular com um otorrinolaringologista é crucial para o manejo eficaz dessa condição.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['perfuracoes-timpanicas'],
@@ -89,7 +89,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Traumas, como inserção inadequada de objetos no ouvido, explosões ou mudanças bruscas de pressão, como durante o mergulho ou viagens aéreas, são causas comuns de perfurações timpânicas. Infecções de ouvido, como a otite média aguda, também podem levar à formação de uma perfuração se a pressão do fluido acumulado romper o tímpano. A presença de secreção purulenta pode ser um sinal de perfuração associada à infecção.\n' +
       '\n' +
       'O diagnóstico é feito por exame otoscópico, onde a perfuração é visualizada diretamente. A maioria das perfurações timpânicas cicatriza espontaneamente dentro de algumas semanas, mas algumas podem necessitar de intervenção médica. O tratamento pode incluir o uso de antibióticos para prevenir infecções secundárias e evitar a entrada de água no ouvido durante o processo de cicatrização. Em casos onde a perfuração não cicatriza por si só, uma cirurgia conhecida como timpanoplastia pode ser realizada para fechar o orifício e restaurar a audição.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['colesteatoma'],
@@ -102,7 +102,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Os sintomas de um colesteatoma incluem secreção crônica pelo ouvido (otorreia), perda auditiva, dor no ouvido e, em casos avançados, vertigem e paralisia facial. A otoscopia pode revelar uma massa esbranquiçada ou amarelada no ouvido médio, e exames de imagem como tomografia computadorizada (TC) são utilizados para avaliar a extensão do colesteatoma e o envolvimento das estruturas ósseas.\n' +
       '\n' +
       'O tratamento do colesteatoma é geralmente cirúrgico, visando a remoção completa do tecido anômalo para prevenir a recorrência e tratar as complicações. A mastoidectomia é um procedimento comum, onde as células mastoides afetadas são removidas. O acompanhamento pós-operatório é essencial para monitorar a cicatrização e identificar quaisquer sinais de recorrência. O manejo eficaz do colesteatoma é crucial para preservar a audição e prevenir complicações graves.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['tonturas'],
@@ -115,7 +115,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'O diagnóstico das causas das tonturas pode ser complexo e geralmente envolve uma avaliação detalhada do histórico médico, exame físico e testes específicos do equilíbrio e da função vestibular. Exames de imagem, como ressonância magnética (RM), podem ser necessários para excluir outras causas neurológicas ou estruturais. Testes auditivos e vestibulares, como a videonistagmografia (VNG) e a prova calórica, ajudam a identificar problemas no ouvido interno.\n' +
       '\n' +
       'O tratamento das tonturas depende da causa subjacente. Para VPPB, manobras de reposicionamento, como a manobra de Epley, são eficazes para aliviar os sintomas. A doença de Menière pode ser manejada com mudanças na dieta, medicamentos diuréticos e, em casos graves, cirurgia. O tratamento da neurite vestibular pode incluir medicamentos para aliviar os sintomas agudos e fisioterapia vestibular para ajudar na recuperação do equilíbrio. O acompanhamento médico é essencial para ajustar o tratamento conforme necessário e monitorar a evolução da condição.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['vppb'],
@@ -128,7 +128,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Os sintomas da VPPB incluem vertigem de curta duração, geralmente menos de um minuto, acompanhada por náusea e, às vezes, desequilíbrio. A vertigem pode ser debilitante, causando medo de realizar movimentos que desencadeiam os sintomas. O diagnóstico é geralmente clínico, baseado na história do paciente e em manobras diagnósticas específicas, como a manobra de Dix-Hallpike, que provoca os sintomas típicos de VPPB.\n' +
       '\n' +
       'O tratamento da VPPB é eficaz e envolve manobras de reposicionamento, como a manobra de Epley, que ajudam a mover os otólitos deslocados para uma posição onde não causam sintomas. Essas manobras são realizadas por um médico ou fisioterapeuta treinado e podem proporcionar alívio imediato ou após algumas sessões. Em alguns casos, exercícios vestibulares são recomendados para ajudar a restaurar o equilíbrio e prevenir recorrências. A VPPB tem uma alta taxa de recorrência, por isso, o acompanhamento e a educação do paciente sobre como gerenciar os episódios são importantes.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['meniere'],
@@ -141,7 +141,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'Os episódios de vertigem na Doença de Menière podem durar de 20 minutos a várias horas, acompanhados por náusea e vômitos. A perda auditiva associada tende a ser progressiva e pode eventualmente se tornar permanente. O zumbido e a sensação de plenitude auricular são constantes ou intermitentes, afetando a qualidade de vida do paciente. A natureza imprevisível dos episódios de vertigem pode ser extremamente debilitante e impactar a capacidade de realizar atividades diárias e profissionais.\n' +
       '\n' +
       'O manejo da Doença de Menière inclui mudanças na dieta, como a redução da ingestão de sal para minimizar a retenção de líquidos, e o uso de diuréticos para controlar o volume de líquido no ouvido interno. Medicamentos para controlar a vertigem, náusea e ansiedade durante os episódios agudos também são prescritos. Em casos severos e refratários ao tratamento conservador, procedimentos cirúrgicos, como a descompressão do saco endolinfático ou a labirintectomia, podem ser considerados. A reabilitação vestibular e o apoio psicológico são componentes importantes do tratamento para ajudar os pacientes a lidar com os sintomas crônicos e melhorar a qualidade de vida.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['zumbido'],
@@ -154,7 +154,7 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'As causas do zumbido são variadas e podem incluir exposição a ruídos altos, perda auditiva relacionada à idade (presbiacusia), infecções do ouvido, doenças do ouvido interno como a Doença de Menière, uso de certos medicamentos ototóxicos, traumas na cabeça ou pescoço e condições sistêmicas como hipertensão e diabetes. O zumbido também pode estar associado a distúrbios emocionais e psicológicos, como ansiedade e depressão, que podem amplificar a percepção dos sintomas.\n' +
       '\n' +
       'O diagnóstico do zumbido envolve uma avaliação abrangente do histórico médico, exame físico e testes auditivos para determinar a causa subjacente. Em alguns casos, exames de imagem como ressonância magnética (RM) podem ser necessários para excluir causas neurológicas. O tratamento do zumbido depende da causa identificada e pode incluir o uso de aparelhos auditivos, terapias sonoras, medicamentos para aliviar os sintomas e técnicas de manejo do estresse. Terapias comportamentais, como a Terapia de Retreinamento de Tinnitus (TRT) e a terapia cognitivo-comportamental (TCC), podem ser eficazes para ajudar os pacientes a habituar-se ao zumbido e melhorar a qualidade de vida.',
-    imageSrc: ''
+    imageUrl: ''
   },
   {
     urls: ['doencas-nariz-garganta-ouvidos'],
@@ -167,6 +167,6 @@ Além disso, várias condições médicas podem contribuir para a perda auditiva
       'A sinusite é a inflamação dos seios paranasais, frequentemente causada por infecções virais ou bacterianas, que resulta em sintomas como congestão nasal, dor facial, cefaleia e secreção nasal. Quando crônica, a sinusite pode levar a complicações como a otite média devido à obstrução das trompas de Eustáquio. A amigdalite e adenoidite são inflamações das amígdalas e adenoides, respectivamente, que podem causar dor de garganta, dificuldade para engolir e obstrução nasal, especialmente em crianças.\n' +
       '\n' +
       'A rinite alérgica é uma condição inflamatória das vias nasais causada por uma reação alérgica a alérgenos, como pólen, ácaros ou pêlos de animais. Os sintomas incluem espirros, prurido nasal, congestão e coriza. A rinite alérgica pode afetar a função da trompa de Eustáquio e predispor o indivíduo a infecções do ouvido médio. O tratamento dessas condições pode incluir o uso de medicamentos, como antibióticos, descongestionantes, anti-histamínicos e corticoides, além de intervenções cirúrgicas quando necessário. A abordagem multidisciplinar envolvendo otorrinolaringologistas, alergologistas e outros especialistas é fundamental para o manejo eficaz dessas doenças e a prevenção de complicações.',
-    imageSrc: ''
+    imageUrl: ''
   }
 ] as const;

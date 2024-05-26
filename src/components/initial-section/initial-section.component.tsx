@@ -14,7 +14,10 @@ export function InitialSection() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <span className={styles.title}>Dr. Jefferson André Bauer</span>
+        <span className={styles.title}>
+          Dr. Jefferson <br />
+          André Bauer
+        </span>
         <span className={styles.description}>
           Otorrinolaringologista com mais de 5 anos de experiência especializado
           em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.

@@ -1,3 +1,5 @@
+@import "src/breakpoints.module";
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -8,6 +10,10 @@
     display: flex;
     flex-direction: column;
     max-width: 21.875rem;
+
+    @include at-or-smaller-than($xs-max) {
+      display: none;
+    }
 
     .title-and-icon {
       display: flex;
@@ -28,6 +34,37 @@
       font-weight: 500;
       color: #fff;
       opacity: 0.75;
+    }
+  }
+
+  .mobile {
+    @include at-or-bigger-than($sm-min) {
+      display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 130%;
+    color: white;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    img {
+      margin-bottom: 0.3rem;
+      width: 1.75rem;
+
+      &:nth-child(2) {
+        // hack to change image color to white
+        filter: invert(100%) brightness(118%) contrast(100%);
+      }
     }
   }
 }
