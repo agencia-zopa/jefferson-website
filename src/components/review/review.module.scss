@@ -1,21 +1,21 @@
 .container {
   background-color: #fff;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   display: flex;
-  gap: 38px;
-  padding: 30px;
-  max-width: 534px;
+  gap: 2.375rem;
+  padding: 1.875rem;
+  max-width: 33.375rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .profile-pic {
-  height: 92px;
-  width: 92px;
+  height: 5.75rem;
+  width: 5.75rem;
   border-radius: 50%;
   flex-shrink: 0;
   display: flex;
@@ -28,7 +28,7 @@
 
 .name {
   font-size: 1.5rem;
-  line-height: 30px;
+  line-height: 1.875rem;
   font-weight: 800;
   color: #1c294d;
 }
@@ -36,7 +36,7 @@
 .rating {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
 
   span {
     font-family: Inter, sans-serif;
@@ -44,12 +44,16 @@
     font-weight: 400;
     color: #8b8b8b;
   }
+
+  img {
+    width: 10rem;
+  }
 }
 
 .body {
   font-family: Inter, sans-serif;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375rem;
   font-weight: 400;
   color: #8b8b8b;
 }

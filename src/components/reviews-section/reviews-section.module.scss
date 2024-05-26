@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 6.25rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }

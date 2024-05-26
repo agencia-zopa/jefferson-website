@@ -2,17 +2,17 @@
   display: flex;
   justify-content: space-between;
   background-color: #0476f7;
-  padding: 20px 8vw;
+  padding: 1.25rem 8vw;
 
   .address {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    max-width: 21.875rem;
 
     .title-and-icon {
       display: flex;
-      margin-bottom: 5px;
-      gap: 5px;
+      margin-bottom: 0.3125rem;
+      gap: 0.3125rem;
       align-items: center;
 
       h1 {

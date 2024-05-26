@@ -1,7 +1,7 @@
 .about {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
   text-decoration: none;
   color: black;
 
@@ -22,7 +22,7 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.3125rem;
 
   span {
     font-size: 0.875rem;
@@ -37,9 +37,9 @@
 }
 
 .pipe {
-  width: 1px;
+  width: 0.0625rem;
   align-self: stretch;
-  border: 1px solid black;
+  border: 0.0625rem solid black;
   opacity: 0.5;
 
   &.dark {

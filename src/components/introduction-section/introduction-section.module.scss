@@ -1,22 +1,22 @@
 .container {
-  min-height: 1025px;
+  min-height: 64.0625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   img {
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    max-width: 818px;
+    border-top-right-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    max-width: 51.125rem;
     height: auto;
   }
 }
 
 .content {
-  padding: 100px;
+  padding: 6.25rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 
   h1 {
     font-size: 2rem;
@@ -29,13 +29,13 @@
     font-family: Inter, sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 45px;
+    line-height: 2.8125rem;
     color: #595959;
     list-style-type: none;
   }
 }
 
 .divider {
-  width: 93px;
-  border-bottom: 1px solid rgb(89 89 89 / 50%);
+  width: 5.8125rem;
+  border-bottom: 0.0625rem solid rgb(89 89 89 / 50%);
 }

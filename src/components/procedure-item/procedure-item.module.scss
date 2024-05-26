@@ -1,22 +1,22 @@
 .row {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 1.875rem;
   cursor: pointer;
 }
 
 .row img {
-  width: 150px;
-  height: 150px;
-  border-radius: 24px;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 1.5rem;
   object-fit: cover;
 }
 
 .column {
-  padding-top: 16px;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 2.1875rem;
 }
 
 .column h2 {
@@ -34,7 +34,6 @@
   font-size: 1.5rem;
   line-height: 175%;
   color: #a1a1a2;
-  max-height: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
 }

@@ -1,5 +1,5 @@
 .specialty-section {
-  padding: 200px 80px;
+  padding: 12.5rem 5rem;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -48,7 +48,7 @@
 }
 
 .content {
-  max-width: 900px;
+  max-width: 56.25rem;
   color: white;
 
   h1 {
@@ -61,7 +61,7 @@
   }
 
   p {
-    margin: 30px 0;
+    margin: 1.875rem 0;
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -73,5 +73,5 @@
 .buttons {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 1.875rem;
 }

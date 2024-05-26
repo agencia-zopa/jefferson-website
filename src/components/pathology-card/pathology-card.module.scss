@@ -1,33 +1,33 @@
 .container {
-  width: 480px;
+  width: 30rem;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .image-container {
-  height: 350px;
+  height: 21.875rem;
   width: 100%;
   background-color: #d1e2f6;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .title {
-  margin-top: 30px;
-  height: 99px;
+  margin-top: 1.875rem;
+  height: 6.1875rem;
   font-size: 1.75rem;
-  line-height: 40px;
+  line-height: 2.5rem;
   font-weight: 800;
   color: #1c294d;
   text-align: center;
 }
 
 .text {
-  margin-bottom: 30px;
-  height: 86px;
+  margin-bottom: 1.875rem;
+  height: 5.375rem;
   font-size: 1.5rem;
-  line-height: 45px;
+  line-height: 2.8125rem;
   font-weight: 500;
   color: #a1a1a2;
   text-align: center;

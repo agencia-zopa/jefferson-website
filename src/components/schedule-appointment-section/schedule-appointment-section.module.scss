@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0 100px 100px;
-  gap: 100px;
+  padding: 6.25rem 0 6.25rem 6.25rem;
+  gap: 6.25rem;
 
   img {
-    max-width: 818px;
+    max-width: 51.125rem;
     height: auto;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+    border-top-left-radius: 6.25rem;
+    border-bottom-left-radius: 6.25rem;
   }
 }
 
@@ -17,8 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
-  max-width: 900px;
+  gap: 1.875rem;
+  max-width: 56.25rem;
 }
 
 .title {
@@ -34,6 +34,6 @@
   font-family: Inter, sans-serif;
   font-style: normal;
   font-size: 1.75rem;
-  line-height: 45px;
+  line-height: 2.8125rem;
   color: #8b8b8b;
 }

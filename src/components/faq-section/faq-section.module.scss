@@ -1,5 +1,5 @@
 .faq-section {
-  padding: 100px;
+  padding: 6.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,17 +8,17 @@
 .faq-items-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 60px 110px;
+  gap: 3.75rem 6.875rem;
 }
 
 .more-questions {
-  margin-top: 60px;
-  padding: 50px;
+  margin-top: 3.75rem;
+  padding: 3.125rem;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-row-gap: 16px;
-  border-radius: 30px;
+  grid-row-gap: 1rem;
+  border-radius: 1.875rem;
   background-color: #d1e2f6;
   place-self: stretch stretch;
 
