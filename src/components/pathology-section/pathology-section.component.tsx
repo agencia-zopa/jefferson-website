@@ -20,9 +20,8 @@ export function PathologySection() {
       <Swiper
         className={styles.swiper}
         slidesPerView={'auto'}
-        spaceBetween={30}
+        spaceBetween={90}
       >
-        {/* FIXME: This is not well defined, we need to play around with slidesPerView and the width of styles.slide to find the optimal size https://swiperjs.com/demos#slides-per-view-auto */}
         {pathologies.map((pathology, idx) => (
           <SwiperSlide key={idx} className={styles.slide}>
             <PathologyCard
