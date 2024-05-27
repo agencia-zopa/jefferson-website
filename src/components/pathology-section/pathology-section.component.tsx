@@ -29,7 +29,7 @@ export function PathologySection() {
               title={pathology.name}
               text={pathology.shortDescription}
               imageUrl={pathology.imageUrl}
-              fullArticleUrl={pathology.urls[0]}
+              fullArticleUrl={'/patologias/' + pathology.urls[0]}
               outline={false}
             />
           </SwiperSlide>

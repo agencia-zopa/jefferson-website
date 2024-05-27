@@ -9,6 +9,7 @@ import { PageTitle } from '@/components/page-title/page-title.component';
 import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
 
 import styles from './page.module.scss';
+import {FloatingMenu} from "@/components/floating-menu/floating-menu.component";
 
 interface PathologyDetailsPageProps {
   params: { name: string };
@@ -41,6 +42,7 @@ export default function PathologyDetailsPage({
   if (!pathology) {
     return (
       <div>
+        <FloatingMenu />
         <PageTitle>Carregando...</PageTitle>
         <div className={styles.content}>
           <h2>Carregando...</h2>
@@ -53,6 +55,7 @@ export default function PathologyDetailsPage({
 
   return (
     <div>
+      <FloatingMenu />
       <PageTitle>{pathology.name}</PageTitle>
       <div className={styles.content}>
         <h2>{pathology.name}</h2>

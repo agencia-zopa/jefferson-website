@@ -1,12 +1,16 @@
+'use client';
+
 import { pathologies } from '@/app/patologias/[name]/pathologies';
 import { PageTitle } from '@/components/page-title/page-title.component';
 import { PathologyCard } from '@/components/pathology-card/pathology-card.component';
 
 import styles from './page.module.scss';
+import {FloatingMenu} from "@/components/floating-menu/floating-menu.component";
 
 export default function Home() {
   return (
     <div>
+      <FloatingMenu />
       <PageTitle>Patologias</PageTitle>
       <div className={styles.cards}>
         {pathologies.map((pathology, index) => (

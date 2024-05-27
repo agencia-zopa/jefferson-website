@@ -34,7 +34,7 @@ export function NavItems({ itemClassName, onClick }: NavItemsProps) {
       <a
         key={path + id}
         className={itemClassName}
-        href={path + '#' + id}
+        href={id !== undefined ? path + '#' + id : path}
         onClick={e => onClick?.(e, path, id)}
       >
         {label}

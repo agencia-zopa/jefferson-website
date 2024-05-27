@@ -12,28 +12,12 @@ import { useScrollDetection } from '@/hooks/use-scroll-detection';
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
 import styles from './navbar.module.scss';
 
-interface NavItem {
-  label: string;
-  href: string;
-}
-
 export function Navbar() {
   const isMobile = useSpecificBreakpoint('lte', 900);
 
   const hideLogoDetails = useSpecificBreakpoint('lte', 1100);
 
   const isScrolled = useScrollDetection(10);
-
-  const navOptions: NavItem[] = useMemo(
-    () => [
-      { label: 'Apresentação', href: '/#' + SectionIDs.INTRODUCTION },
-      { label: 'Procedimentos', href: '/#' + SectionIDs.PROCEDURES },
-      { label: 'Patologias', href: '/patologias' },
-      { label: 'Avaliações', href: '/#' + SectionIDs.REVIEWS },
-      { label: 'Dúvidas', href: '/#' + SectionIDs.FAQ }
-    ],
-    []
-  );
 
   if (isMobile) {
     return null;
