@@ -1,4 +1,3 @@
-import ArrowRight from '@public/arrow-right.svg';
 import locationIcon from '@public/location-icon.svg';
 import Image from 'next/image';
 

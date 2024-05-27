@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .container {
   padding: 6.25rem 0;
@@ -13,13 +13,13 @@
     width: 50%;
     height: auto;
 
-    @include breakpoints.at-or-bigger-than(1900px) {
+    @include at-or-bigger-than(1900px) {
       margin-left: 6.25rem;
       border-top-left-radius: 6.25rem;
       border-bottom-left-radius: 6.25rem;
     }
 
-    @include breakpoints.at-or-smaller-than(1200px) {
+    @include at-or-smaller-than(1200px) {
       display: none;
     }
   }
@@ -31,7 +31,7 @@
   flex-direction: column;
   gap: 1.875rem;
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     padding: 5rem 2.2rem 2.2rem;
   }
 

@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .container {
   background-color: #fff;
@@ -8,7 +8,7 @@
   padding: 1.875rem;
   max-width: 33.375rem;
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     flex-direction: column;
     max-width: 100%;
     width: 100%;

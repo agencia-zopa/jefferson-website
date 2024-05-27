@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .page-title {
   padding: 3.125rem 6.25rem 3.125rem 3.125rem;
@@ -19,7 +19,7 @@
     height: auto;
   }
 
-  @include breakpoints.at-or-bigger-than(900px) {
+  @include at-or-bigger-than(900px) {
     margin: 6.7rem 0 0;
   }
 }

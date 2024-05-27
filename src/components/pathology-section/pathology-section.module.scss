@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .container {
   background-color: #fff;
@@ -26,7 +26,7 @@
   padding: 0 6.25rem;
   margin-bottom: 5rem;
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     padding: 0 2.5rem;
   }
 }
@@ -34,7 +34,7 @@
 .slide {
   max-width: 30rem;
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     width: calc(100vw - 10rem);
   }
 }

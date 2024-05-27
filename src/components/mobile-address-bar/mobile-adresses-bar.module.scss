@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import "src/breakpoints.module";
 
 .container {
@@ -38,7 +39,7 @@
   }
 }
 
-.menuModal {
+.menu-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -77,14 +78,14 @@
   }
 }
 
-.titleAndIcon {
+.title-and-icon {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
 }
 
-.closeButton {
+.close-button {
   position: absolute;
   top: 2rem;
   right: 2rem;

@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .row {
   display: flex;
@@ -14,7 +14,7 @@
   object-fit: cover;
   flex-shrink: 0;
 
-  @include breakpoints.at-or-smaller-than(1200px) {
+  @include at-or-smaller-than(1200px) {
     width: 7.5rem;
     height: 7.5rem;
   }
@@ -26,7 +26,7 @@
   flex-direction: column;
   gap: 2.1875rem;
 
-  @include breakpoints.at-or-smaller-than(1200px) {
+  @include at-or-smaller-than(1200px) {
     padding-top: 0;
     gap: 1rem;
   }
@@ -39,7 +39,7 @@
   font-size: 1.75rem;
   line-height: 100%;
 
-  @include breakpoints.at-or-smaller-than(1200px) {
+  @include at-or-smaller-than(1200px) {
     font-size: 1.6rem;
     line-height: 150%;
     margin-top: 0;
@@ -56,7 +56,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
-  @include breakpoints.at-or-smaller-than(1200px) {
+  @include at-or-smaller-than(1200px) {
     font-size: 1.4rem;
     overflow: hidden;
     display: -webkit-box;

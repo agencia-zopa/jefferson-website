@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .container {
   top: 0;
@@ -17,7 +17,7 @@
     box-shadow: 0 2px 20px 0 rgb(0 0 0 / 12%);
   }
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     display: none;
   }
 }
@@ -41,8 +41,8 @@
   }
 }
 
-.ctaWrapper {
-  @include breakpoints.at-or-smaller-than(1400px) {
+.cta-wrapper {
+  @include at-or-smaller-than(1400px) {
     display: none;
   }
 }

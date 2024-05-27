@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .cards {
   padding: 9.375rem;
@@ -9,11 +9,11 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @include breakpoints.at-or-smaller-than(1200px) {
+  @include at-or-smaller-than(1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     grid-template-columns: repeat(1, 1fr);
     padding: 5rem 2.5rem;
   }

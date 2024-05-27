@@ -1,6 +1,6 @@
-@use "src/breakpoints.module" as *;
+@import "src/breakpoints.module";
 
-.wppButton {
+.wpp-button {
   position: fixed;
   bottom: 2rem;
   right: 2rem;

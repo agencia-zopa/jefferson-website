@@ -1,4 +1,4 @@
-@use "src/breakpoints.module" as breakpoints;
+@import "src/breakpoints.module";
 
 .faq-section {
   padding: 6.25rem;
@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     padding: 5rem 2.5rem;
   }
 }
@@ -16,11 +16,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 3.75rem 6.875rem;
 
-  @include breakpoints.at-or-bigger-than(1200px) {
+  @include at-or-bigger-than(1200px) {
     max-width: 70vw;
   }
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     grid-template-columns: 1fr;
   }
 }
@@ -36,7 +36,7 @@
   background-color: #d1e2f6;
   place-self: stretch stretch;
 
-  @include breakpoints.at-or-smaller-than(900px) {
+  @include at-or-smaller-than(900px) {
     display: flex;
     flex-direction: column;
   }

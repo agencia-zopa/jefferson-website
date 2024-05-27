@@ -4,8 +4,6 @@
     "stylelint-prettier"
   ],
   "rules": {
-    "prettier/prettier": true,
-    "selector-class-pattern": null,
-    "no-descending-specificity": null
+    "prettier/prettier": true
   }
 }

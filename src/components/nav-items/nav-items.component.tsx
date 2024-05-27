@@ -1,8 +1,6 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 
 import { SectionIDs } from '@/app/section-ids';
-import styles from '@/components/navbar/navbar.module.scss';
-import { scrollToId } from '@/hooks/scroll-to-id';
 
 interface NavItem {
   label: string;
