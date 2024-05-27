@@ -42,13 +42,6 @@ export function AddressBar() {
           <h2>{description}</h2>
         </div>
       ))}
-      <div className={styles.mobile}>
-        <div>
-          <Image src={locationIcon} alt={''} />
-          <span>Ver localizações</span>
-        </div>
-        <Image src={ArrowRight} alt={''} />
-      </div>
     </div>
   );
 }

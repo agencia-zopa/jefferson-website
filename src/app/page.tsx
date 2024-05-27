@@ -26,7 +26,7 @@ export default function Home() {
       {!isMobile && <AddressBar />}
       <InitialSection />
       {isMobile && <FloatingMenu />}
-      {isMobile && <MobileAddressBar />}
+      <MobileAddressBar />
       <PresentationSection />
       <SpecialtySection
         imageSrc={otologiaImage}

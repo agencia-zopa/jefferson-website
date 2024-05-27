@@ -6,6 +6,10 @@
   background-color: #0476f7;
   padding: 1.25rem 8vw;
 
+  @include at-or-bigger-than(900px) {
+    display: none;
+  }
+
   .mobile {
     display: flex;
     align-items: center;
