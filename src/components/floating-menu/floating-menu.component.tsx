@@ -4,12 +4,15 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { LogoWithDetails } from '@/components/logo-with-details/logo-with-details.component';
-import {NavItems, NavItemsProps} from '@/components/nav-items/nav-items.component';
+import {
+  NavItems,
+  NavItemsProps
+} from '@/components/nav-items/nav-items.component';
+import { scrollToId } from '@/hooks/scroll-to-id';
 import { useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 import { useScrollDetection } from '@/hooks/use-scroll-detection';
 
 import styles from './floating-menu.module.scss';
-import {scrollToId} from "@/hooks/scroll-to-id";
 
 export function FloatingMenu() {
   const isScrolled = useScrollDetection(10);
@@ -20,9 +23,9 @@ export function FloatingMenu() {
   const onClickLink: NavItemsProps['onClick'] = (e, path, id) => {
     setModalVisible(false);
     if (id !== undefined) {
-      scrollToId(e, path,id)
+      scrollToId(e, path, id);
     }
-  }
+  };
 
   if (!isMobile) {
     return null;

@@ -12,7 +12,6 @@
   height: 9.375rem;
   border-radius: 1.5rem;
   object-fit: cover;
-
   flex-shrink: 0;
 
   @include breakpoints.at-or-smaller-than(1200px) {

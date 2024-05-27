@@ -21,9 +21,11 @@ const navOptions: NavItem[] = [
 
 export interface NavItemsProps {
   itemClassName?: string;
-  onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-             path: string,
-             id: string | undefined) => void;
+  onClick?: (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    path: string,
+    id: string | undefined
+  ) => void;
 }
 
 export function NavItems({ itemClassName, onClick }: NavItemsProps) {
