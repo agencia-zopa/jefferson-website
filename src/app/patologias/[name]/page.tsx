@@ -4,12 +4,12 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 import { pathologies, Pathology } from '@/app/patologias/[name]/pathologies';
+import { FloatingMenu } from '@/components/floating-menu/floating-menu.component';
 import { PresentationSection } from '@/components/introduction-section/introduction-section.component';
 import { PageTitle } from '@/components/page-title/page-title.component';
 import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
 
 import styles from './page.module.scss';
-import {FloatingMenu} from "@/components/floating-menu/floating-menu.component";
 
 interface PathologyDetailsPageProps {
   params: { name: string };
