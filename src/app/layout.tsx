@@ -5,6 +5,7 @@ import React from 'react';
 
 import { Footer } from '@/components/footer/footer.component';
 import { Navbar } from '@/components/navbar/navbar.component';
+import {WhatsappButton} from "@/components/whatsapp-button/whatsapp-button.component";
 
 export const metadata: Metadata = {
   title: 'Teste',
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang={'pt-br'}>
       <body>
         <Navbar />
+        <WhatsappButton />
         {children}
         <Footer />
       </body>

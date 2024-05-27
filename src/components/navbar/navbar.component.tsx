@@ -19,6 +19,9 @@ export function Navbar() {
   const isMobile = useSpecificBreakpoint('lte', 900);
   const [selectedOption, setSelectedOption] = useState<string>();
 
+  const showCta = useSpecificBreakpoint('gte', 1400);
+  const hideLogoDetails = useSpecificBreakpoint('lte', 1100);
+
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
   };
@@ -26,7 +29,7 @@ export function Navbar() {
   const navOptions: NavItem[] = useMemo(
     () => [
       { label: 'Apresentação', href: '/#' + SectionIDs.INTRODUCTION },
-      { label: 'Doenças', href: '/#' + SectionIDs.DISEASES },
+      { label: 'Procedimentos', href: '/#' + SectionIDs.PROCEDURES },
       { label: 'Patologias', href: '/patologias' },
       { label: 'Avaliações', href: '/#' + SectionIDs.REVIEWS },
       { label: 'Dúvidas', href: '/#' + SectionIDs.FAQ }
@@ -51,7 +54,7 @@ export function Navbar() {
 
   return (
     <nav className={styles.container}>
-      <LogoWithDetails />
+      <LogoWithDetails hideDetails={hideLogoDetails}/>
       <div className={styles.items}>
         {navOptions.map(({ label, href }) => {
           const isSelected = href === selectedOption;
@@ -68,7 +71,7 @@ export function Navbar() {
           );
         })}
       </div>
-      <ScheduleAppointment hasShadow={true} />
+      {showCta && <ScheduleAppointment hasShadow={true}/>}
     </nav>
   );
 }

@@ -33,6 +33,8 @@
 }
 
 .slide {
+  max-width: 30rem;
+
   @include breakpoints.at-or-smaller-than(900px) {
     width: calc(100vw - 10rem);
   }
