@@ -69,6 +69,7 @@
 
   @include breakpoints.at-or-smaller-than(900px) {
     width: 100%;
+    max-width: 100%;
     border-radius: 3rem;
   }
 }

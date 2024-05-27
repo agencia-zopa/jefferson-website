@@ -4,17 +4,26 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { LogoWithDetails } from '@/components/logo-with-details/logo-with-details.component';
-import { NavItems } from '@/components/nav-items/nav-items.component';
+import {NavItems, NavItemsProps} from '@/components/nav-items/nav-items.component';
 import { useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 import { useScrollDetection } from '@/hooks/use-scroll-detection';
 
 import styles from './floating-menu.module.scss';
+import {scrollToId} from "@/hooks/scroll-to-id";
 
 export function FloatingMenu() {
   const isScrolled = useScrollDetection(10);
   const [modalVisible, setModalVisible] = useState(false);
 
   const isMobile = useSpecificBreakpoint('lte', 900);
+
+  const onClickLink: NavItemsProps['onClick'] = (e, path, id) => {
+    setModalVisible(false);
+    if (id !== undefined) {
+      scrollToId(e, path,id)
+    }
+  }
+
   if (!isMobile) {
     return null;
   }
@@ -38,7 +47,7 @@ export function FloatingMenu() {
         </button>
         <LogoWithDetails darkVersion={true} />
         <div className={styles.spacer} />
-        <NavItems itemClassName={styles.link} />
+        <NavItems itemClassName={styles.link} onClick={onClickLink} />
       </div>
     </>
   );

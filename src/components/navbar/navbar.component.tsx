@@ -10,6 +10,7 @@ import { useScrollDetection } from '@/hooks/use-scroll-detection';
 
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
 import styles from './navbar.module.scss';
+import {scrollToId} from "@/hooks/scroll-to-id";
 
 interface NavItem {
   label: string;
@@ -42,7 +43,7 @@ export function Navbar() {
     <nav className={`${styles.container} ${isScrolled ? styles.shadow : ''}`}>
       <LogoWithDetails hideDetails={hideLogoDetails} />
       <div className={styles.items}>
-        <NavItems />
+        <NavItems onClick={(e, path, id) => id !== undefined ? scrollToId(e, path, id) : undefined} />
       </div>
       <div className={styles.ctaWrapper}>
         <ScheduleAppointment hasShadow={true} />

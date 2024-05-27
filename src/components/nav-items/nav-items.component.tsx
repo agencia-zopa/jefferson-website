@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 
 import { SectionIDs } from '@/app/section-ids';
 import styles from '@/components/navbar/navbar.module.scss';
@@ -21,16 +21,19 @@ const navOptions: NavItem[] = [
 
 export interface NavItemsProps {
   itemClassName?: string;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+             path: string,
+             id: string | undefined) => void;
 }
 
-export function NavItems({ itemClassName }: NavItemsProps) {
+export function NavItems({ itemClassName, onClick }: NavItemsProps) {
   return navOptions.map(({ label, path, id }) => {
     return (
       <a
         key={path + id}
         className={itemClassName}
         href={path + '#' + id}
-        onClick={e => (id !== undefined ? scrollToId(e, path, id) : () => {})}
+        onClick={e => onClick?.(e, path, id)}
       >
         {label}
       </a>

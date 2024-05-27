@@ -42,10 +42,12 @@ export function GenericButton({
     >
       <span>{text}</span>
       {iconSrc && (
-        <div
-          className={styles.icon}
-          style={{ '--src': `url(${iconSrcStr})` } as React.CSSProperties}
-        />
+        <div className={styles.iconWrapper}>
+          <div
+            className={styles.icon}
+            style={{ '--src': `url(${iconSrcStr})` } as React.CSSProperties}
+          />
+        </div>
       )}
     </a>
   );

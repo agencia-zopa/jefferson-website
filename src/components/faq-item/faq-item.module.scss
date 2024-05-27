@@ -4,6 +4,9 @@
   background-color: #0476f7;
   width: 4.5rem;
   height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .faq-item h1 {
@@ -20,7 +23,7 @@
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   line-height: 2.1875rem;
   color: #a1a1a2;
 }
