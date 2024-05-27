@@ -1,16 +1,16 @@
-.cardContainer {
+.card-container {
   height: 236px;
   width: 534px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 30px;
 }
 
-.contentContainer {
+.content-container {
   display: flex;
   padding: 30px;
 }
 
-.profilePic {
+.profile-pic {
   height: 92px;
   width: 92px;
   border-radius: 50%;
@@ -19,13 +19,14 @@
   align-items: center;
   justify-content: center;
 }
-.profilePic span {
-  color: #ffffff;
+
+.profile-pic span {
+  color: #fff;
   font-size: 48px;
   font-weight: 500;
 }
 
-.reviewContainer {
+.review-container {
   padding-left: 38px;
   display: flex;
   flex-direction: column;
@@ -45,7 +46,7 @@
 }
 
 .rating span {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #8b8b8b;
@@ -53,7 +54,7 @@
 }
 
 .review {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;

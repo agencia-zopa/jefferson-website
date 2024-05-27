@@ -1,5 +1,6 @@
-import { PathologyCard } from "@/components/pathology-card/pathology-card.component";
-import styles from "./page.module.scss";
+import { PathologyCard } from '@/components/pathology-card/pathology-card.component';
+
+import styles from './page.module.scss';
 
 export default function Home() {
   return (
@@ -9,60 +10,60 @@ export default function Home() {
       </div>
       <div className={styles.cardsContainer}>
         <PathologyCard
-          title={"Aplicação de corticoide intratimpânico"}
+          title={'Aplicação de corticoide intratimpânico'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={"/IMG_2646.jpg"}
+          imagePath={'/IMG_2646.jpg'}
         />
         <PathologyCard
-          title={"Manobras de reposicionamento para VPPB"}
+          title={'Manobras de reposicionamento para VPPB'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={""}
+          imagePath={''}
         />
         <PathologyCard
-          title={"Tubo de ventilação"}
+          title={'Tubo de ventilação'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={""}
+          imagePath={''}
         />
         <PathologyCard
-          title={"Timpanoplastia"}
+          title={'Timpanoplastia'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={""}
+          imagePath={''}
         />
         <PathologyCard
-          title={"Estapedectomia"}
+          title={'Estapedectomia'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={"/IMG_2646.jpg"}
+          imagePath={'/IMG_2646.jpg'}
         />
         <PathologyCard
-          title={"Implante Coclear"}
+          title={'Implante Coclear'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={""}
+          imagePath={''}
         />
         <PathologyCard
-          title={"Próteses ancoradas no osso (BAHA, Ponto, etc)"}
+          title={'Próteses ancoradas no osso (BAHA, Ponto, etc)'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={""}
+          imagePath={''}
         />
         <PathologyCard
-          title={"Próteses implantáveis"}
+          title={'Próteses implantáveis'}
           text={
-            "Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit."
+            'Lorem ipsum dolor sit amet consectetur. Viverra nec viverra tortor risus in orci. Egestas pulvinar faucibus potenti nunc non tortor velit.'
           }
-          imagePath={""}
+          imagePath={''}
         />
       </div>
     </div>

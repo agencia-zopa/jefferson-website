@@ -1,28 +1,19 @@
-
-
-.genericButton {
+.generic-button {
   padding: 20px 30px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-
   border-radius: 50px;
-
   text-decoration: none;
-
   color: var(--color);
   background-color: var(--background-color);
-
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-
   cursor: pointer;
-
 
   &.outline {
     background-color: transparent;
@@ -37,8 +28,6 @@
 .icon {
   width: 24px;
   height: 24px;
-
   background-color: var(--color);
-
   mask: var(--src) no-repeat center;
 }

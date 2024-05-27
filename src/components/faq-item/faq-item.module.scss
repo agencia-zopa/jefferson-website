@@ -1,35 +1,26 @@
-
-
-.faqItem {
-
-}
-
-.iconWrapper {
+.icon-wrapper {
   padding: 24px;
   border-radius: 50%;
-  background-color: #0476F7;
+  background-color: #0476f7;
   width: 72px;
   height: 72px;
 }
 
-.faqItem h1 {
+.faq-item h1 {
   margin: 30px 0;
-
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 40px;
-
-  color: #1C294D;
+  color: #1c294d;
 }
 
-.faqItem p {
-  font-family: 'Inter', sans-serif;
+.faq-item p {
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 35px;
-
-  color: #A1A1A2;
+  color: #a1a1a2;
 }

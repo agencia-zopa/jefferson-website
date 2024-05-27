@@ -2,7 +2,7 @@
   width: 480px;
 }
 
-.imageContainer {
+.image-container {
   height: 350px;
   width: 100%;
   background-color: #d1e2f6;
@@ -29,24 +29,21 @@
   text-align: center;
 }
 
-.buttonContainer {
+.button-container {
   background-color: #0476f7;
   display: flex;
   align-items: center;
   height: 70px;
   gap: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 30px;
   border-radius: 50px;
   text-decoration: none;
   margin: auto;
   justify-content: center;
 }
 
-.buttonText {
-  color: #ffffff;
+.button-text {
+  color: #fff;
   font-weight: bold;
   font-size: 20px;
 }

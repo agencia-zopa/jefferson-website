@@ -6,23 +6,23 @@
   margin-left: 0;
 }
 
-.adressTitleLine {
+.address-title-line {
   display: flex;
   margin-bottom: 5px;
 }
 
-.adressTitle {
+.address-title {
   font-size: 20px;
   font-weight: 800;
-  color: #ffffff;
+  color: #fff;
   margin: auto;
   margin-left: 5px;
 }
 
-.adressDescription {
-  font-family: "Inter", sans-serif;
+.address-description {
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   opacity: 0.75;
 }

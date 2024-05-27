@@ -3,87 +3,74 @@
   background-color: white;
 }
 
-.contactForm {
+.contact-form {
   margin: 100px auto;
   display: flex;
   flex-direction: column;
   max-width: 900px;
-
 }
 
-.contactForm label {
+.contact-form label {
   margin: 30px 0;
-
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
   line-height: 40px;
-
-  color: #1C294D;
+  color: #1c294d;
 }
 
-.contactForm input, .contactForm textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 20px 30px;
-  background-color: #F9F9F9;
-
-  border: 1px solid #CCCCCC;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
   border-radius: 20px;
-
   outline: none;
-
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
 
   &::placeholder {
-    color: #A4A4A4;
+    color: #a4a4a4;
   }
 }
 
-.contactForm textarea {
+.contact-form textarea {
   min-height: 200px;
   resize: vertical;
 }
 
-.contactForm p {
+.contact-form p {
   margin: 30px 0;
-
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 45px;
-
-  color: #A1A1A2;
+  color: #a1a1a2;
 }
 
-.contactForm button {
+.contact-form button {
   padding: 25px 40px;
-
   border-radius: 50px;
-  background-color: #0476F7;
-
+  background-color: #0476f7;
   border: none;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
-
-  color: #FFFFFF;
-
+  color: #fff;
   cursor: pointer;
 }
 
-.contactForm .error {
+.contact-form .error {
   margin-top: 12px;
   color: red;
   font-size: 18px;

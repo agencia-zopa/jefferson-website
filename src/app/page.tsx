@@ -1,28 +1,29 @@
-import { AdressesBar } from "@/components/adresses-bar/adresses-bar.component";
-import { InitialSection } from "@/components/initial-section/initial-section.component";
-import { PresentationSection } from "@/components/presentation-section/presentation-section.component";
-import { SpecialtySection } from "@/components/specialty-section/specialty-section.component";
-import otologiaImage from "@public/IMG_2636.jpg";
-import otoneuroImage from "@public/IMG_2621.jpg";
+import otoneuroImage from '@public/IMG_2621.jpg';
+import otologiaImage from '@public/IMG_2636.jpg';
+import React from 'react';
 
-import { PathologySection } from "@/components/pathology-section/pathology-section.component";
-import { ScheduleAppointmentSection } from "@/components/schedule-appointment-section/schedule-appointment-section.component";
-import { ProceduresSection } from "@/components/procedures-section/procedures-section.component";
-import { ConveniosSection } from "@/components/convenios-section/convenios-section.component";
-import { ReviewsSection } from "@/components/reviews-section/reviews-section.component";
-import {FaqSection} from "@/components/faq-section/faq-section.component";
+import { AddressesBar } from '@/components/addresses-bar/adresses-bar.component';
+import { ConveniosSection } from '@/components/convenios-section/convenios-section.component';
+import { FaqSection } from '@/components/faq-section/faq-section.component';
+import { InitialSection } from '@/components/initial-section/initial-section.component';
+import { PathologySection } from '@/components/pathology-section/pathology-section.component';
+import { PresentationSection } from '@/components/presentation-section/presentation-section.component';
+import { ProceduresSection } from '@/components/procedures-section/procedures-section.component';
+import { ReviewsSection } from '@/components/reviews-section/reviews-section.component';
+import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
+import { SpecialtySection } from '@/components/specialty-section/specialty-section.component';
 
 export default function Home() {
   return (
     <>
-      <AdressesBar />
+      <AddressesBar />
       <InitialSection />
       <PresentationSection />
       <SpecialtySection
         imageSrc={otologiaImage}
-        imageAlt="Dr. Jefferson segurando a cabeça de uma paciente"
-        title="Otologia"
-        articleHref="#"
+        imageAlt={'Dr. Jefferson segurando a cabeça de uma paciente'}
+        title={'Otologia'}
+        articleHref={'#'}
       >
         A Otologia é uma especialidade médica focada no estudo e tratamento dos
         distúrbios do ouvido e suas estruturas relacionadas. Isso inclui não
@@ -31,10 +32,10 @@ export default function Home() {
       </SpecialtySection>
       <SpecialtySection
         imageSrc={otoneuroImage}
-        imageAlt="Dr. Jefferson examinando uma paciente"
-        title="Otoneurologia"
-        articleHref="#"
-        flipped
+        imageAlt={'Dr. Jefferson examinando uma paciente'}
+        title={'Otoneurologia'}
+        articleHref={'#'}
+        flipped={true}
       >
         A Otoneurologia é uma subespecialidade médica que se concentra no estudo
         e tratamento dos distúrbios relacionados ao ouvido interno e ao sistema
