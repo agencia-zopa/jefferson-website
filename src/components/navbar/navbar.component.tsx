@@ -16,7 +16,7 @@ interface NavItem {
 
 export function Navbar() {
   const currentPath = usePathname();
-  const isMobile = useSpecificBreakpoint('lte', breakpoints['xs-max']);
+  const isMobile = useSpecificBreakpoint('lte', 900);
   const [selectedOption, setSelectedOption] = useState<string>();
 
   const handleOptionClick = (option: string) => {

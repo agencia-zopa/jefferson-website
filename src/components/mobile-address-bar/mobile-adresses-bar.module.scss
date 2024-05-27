@@ -7,10 +7,6 @@
   padding: 1.25rem 8vw;
 
   .mobile {
-    @include at-or-bigger-than($sm-min) {
-      display: none;
-    }
-
     display: flex;
     align-items: center;
     flex: 1;
