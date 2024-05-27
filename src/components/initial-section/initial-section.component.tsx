@@ -32,7 +32,7 @@ export function InitialSection() {
         src={mouseIcon}
         alt={'Ícone de mouse'}
         className={`${styles.mouseIcon} ${isScrolled ? styles.inverted : ''}`}
-        sizes="100vw"
+        sizes={'100vw'}
       />
     </div>
   );
