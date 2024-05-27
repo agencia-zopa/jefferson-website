@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { SectionIDs } from '@/app/section-ids';
 import { LogoWithDetails } from '@/components/logo-with-details/logo-with-details.component';
-import { NavbarMobile } from '@/components/navbar/navbar-mobile/navbar-mobile.component';
 import { breakpoints, useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
