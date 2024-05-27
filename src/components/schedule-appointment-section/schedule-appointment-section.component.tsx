@@ -28,7 +28,7 @@ export function ScheduleAppointmentSection() {
         />
       </div>
       {/* FIXME: This is not the right image */}
-      <Image src={DoctorImage} alt={''} />
+      <Image className={styles.image} src={DoctorImage} alt={''} />
     </div>
   );
 }

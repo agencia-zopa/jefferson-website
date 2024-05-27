@@ -1,13 +1,24 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .procedures-section {
   padding: 6.25rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+     padding: 5rem 2.5rem;
+  }
 }
 
 .procedures-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.125rem 6.25rem;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    grid-template-columns: 1fr;
+  }
 }

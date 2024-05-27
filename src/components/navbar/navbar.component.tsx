@@ -47,7 +47,7 @@ export function Navbar() {
   }, [currentPath, navOptions]);
 
   if (isMobile) {
-    return <NavbarMobile />;
+    return null;
   }
 
   return (

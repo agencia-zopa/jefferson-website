@@ -1,5 +1,8 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .container {
-  width: 30rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 0.625rem;
@@ -15,7 +18,6 @@
 
 .title {
   margin-top: 1.875rem;
-  height: 6.1875rem;
   font-size: 1.75rem;
   line-height: 2.5rem;
   font-weight: 800;
@@ -24,7 +26,7 @@
 }
 
 .text {
-  margin-bottom: 1.875rem;
+  margin: 1.875rem 0;
   height: 5.375rem;
   font-size: 1.5rem;
   line-height: 2.8125rem;

@@ -1,3 +1,6 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -5,11 +8,9 @@
   padding: 6.25rem 0 6.25rem 6.25rem;
   gap: 6.25rem;
 
-  img {
-    max-width: 51.125rem;
-    height: auto;
-    border-top-left-radius: 6.25rem;
-    border-bottom-left-radius: 6.25rem;
+  @include breakpoints.at-or-smaller-than(900px) {
+    flex-direction: column;
+    padding: 5rem 2.5rem;
   }
 }
 
@@ -28,6 +29,11 @@
   font-size: 6.25rem;
   line-height: 100%;
   color: #0476f7;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    font-size: 3.6rem;
+    line-height: 110%;
+  }
 }
 
 .text {
@@ -36,4 +42,21 @@
   font-size: 1.75rem;
   line-height: 2.8125rem;
   color: #8b8b8b;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+}
+
+.image {
+  max-width: 51.125rem;
+  height: auto;
+  border-top-left-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    width: 100%;
+    border-radius: 3rem;
+  }
 }

@@ -1,11 +1,22 @@
+@use 'src/breakpoints.module' as breakpoints;
+
 .specialty-section {
   padding: 12.5rem 5rem;
   position: relative;
   display: flex;
   justify-content: flex-end;
 
+  @include breakpoints.at-or-smaller-than(1200px) {
+    padding: 28rem 2.5rem 5rem;
+    justify-content: center;
+  }
+
   &.flipped {
     justify-content: flex-start;
+
+    @include breakpoints.at-or-smaller-than(1200px) {
+      justify-content: center;
+    }
   }
 }
 
@@ -17,6 +28,11 @@
   height: 100%;
   object-fit: cover;
   z-index: -2;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .background-image-fade {
@@ -34,6 +50,15 @@
     rgb(28 41 77 / 0%) 114.47%
   );
   z-index: -1;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    background: linear-gradient(
+                    0deg,
+                    #1c294d 0%,
+                    #1c294d 50%,
+                    rgb(28 41 77 / 0%) 80%
+    );
+  }
 }
 
 .flipped .background-image-fade {
@@ -45,11 +70,24 @@
     rgb(28 41 77 / 0%) 63.33%,
     rgb(28 41 77 / 0%) 114.47%
   );
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    background: linear-gradient(
+                    0deg,
+                    #1c294d 0%,
+                    #1c294d 50%,
+                    rgb(28 41 77 / 0%) 80%
+    );
+  }
 }
 
 .content {
   max-width: 56.25rem;
   color: white;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    max-width: 100%;
+  }
 
   h1 {
     margin: 0;
@@ -58,6 +96,10 @@
     font-weight: 800;
     font-size: 6.25rem;
     line-height: 100%;
+
+    @include breakpoints.at-or-smaller-than(1200px) {
+      font-size: 3.6rem;
+    }
   }
 
   p {
@@ -67,6 +109,10 @@
     font-weight: 400;
     font-size: 1.75rem;
     line-height: 150%;
+
+    @include breakpoints.at-or-smaller-than(1200px) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -74,4 +120,9 @@
   display: flex;
   flex-direction: row;
   gap: 1.875rem;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

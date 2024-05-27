@@ -1,3 +1,6 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .container {
   background-color: #fff;
   display: flex;
@@ -23,9 +26,14 @@
   height: 100%;
   padding: 0 6.25rem;
   margin-bottom: 5rem;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    padding: 0 2.5rem;
+  }
 }
 
 .slide {
-  // has to be the same as the PathologyCard width
-  width: 30rem;
+  @include breakpoints.at-or-smaller-than(900px) {
+    width: calc(100vw - 10rem);
+  }
 }

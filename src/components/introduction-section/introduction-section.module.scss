@@ -1,14 +1,21 @@
+@use 'src/breakpoints.module' as breakpoints;
+
 .container {
-  min-height: 64.0625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+
+
   img {
     border-top-right-radius: 6.25rem;
     border-bottom-right-radius: 6.25rem;
-    max-width: 51.125rem;
+    width: 50%;
     height: auto;
+
+    @include breakpoints.at-or-smaller-than(1200px) {
+      display: none;
+    }
   }
 }
 
@@ -17,6 +24,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    padding: 5rem 2.2rem 2.2rem;
+  }
 
   h1 {
     font-size: 2rem;

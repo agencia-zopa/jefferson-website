@@ -1,3 +1,6 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .container {
   background-color: #d1e2f6;
   display: flex;
@@ -5,10 +8,33 @@
   justify-content: center;
   align-items: center;
   padding: 6.25rem;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    padding: 5rem 2.5rem;
+    padding: 6.25rem 0;
+  }
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiperWrapper {
+  align-items: stretch;
+}
+
+
+.swiperSlide {
+  width: calc(100vw - 10rem);
+  height: auto;
 }

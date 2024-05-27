@@ -1,3 +1,5 @@
+'use client';
+
 import otoneuroImage from '@public/IMG_2621.jpg';
 import otologiaImage from '@public/IMG_2636.jpg';
 import React from 'react';
@@ -12,12 +14,19 @@ import { ProceduresSection } from '@/components/procedures-section/procedures-se
 import { ReviewsSection } from '@/components/reviews-section/reviews-section.component';
 import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
 import { SpecialtySection } from '@/components/specialty-section/specialty-section.component';
+import {MobileAddressBar} from "@/components/mobile-address-bar/mobile-adresses-bar.component";
+import {useSpecificBreakpoint} from "@/hooks/use-breakpoints";
+import {FloatingMenu} from "@/components/floating-menu/floating-menu.component";
 
 export default function Home() {
+  const isMobile = useSpecificBreakpoint('lte', 900);
+
   return (
     <>
-      <AddressBar />
+      {!isMobile && <AddressBar/>}
       <InitialSection />
+      {isMobile && <FloatingMenu />}
+      {isMobile && <MobileAddressBar/>}
       <PresentationSection />
       <SpecialtySection
         imageSrc={otologiaImage}

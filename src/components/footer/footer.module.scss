@@ -1,9 +1,16 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .footer {
   padding: 3.125rem 6.25rem;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   background-color: black;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    padding: 5rem 2.5rem;
+  }
 }
 
 .row {
@@ -11,6 +18,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    flex-direction: column;
+  }
+}
+
+.socialsWrapper {
+  @include breakpoints.at-or-smaller-than(900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
 }
 
 .socials-title {

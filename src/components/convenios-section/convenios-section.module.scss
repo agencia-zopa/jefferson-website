@@ -1,14 +1,31 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .convenios-section {
   padding: 6.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    padding: 5rem 2.5rem;
+  }
 }
 
 .convenios-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 5rem;
   place-items: center center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 100%;
+  }
 }

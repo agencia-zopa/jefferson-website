@@ -1,11 +1,23 @@
 .title {
+  position: relative;
   margin: 0 auto 3.75rem;
   display: inline-block;
+  width: min-content;
   font-size: 3.125rem;
   font-weight: 800;
   color: #1c294d;
-  text-decoration: underline;
-  text-decoration-color: #0476f7;
-  text-underline-offset: 1.25rem;
-  text-decoration-thickness: 0.3125rem;
+  //text-decoration: underline;
+  //text-decoration-color: #0476f7;
+  //text-underline-offset: 1.25rem;
+  //text-decoration-thickness: 0.3125rem;
+  text-align: center;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  height: 0.3125rem;
+  background-color: #0476f7;
 }

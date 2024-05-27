@@ -14,7 +14,7 @@ export function Footer() {
     <div className={styles.footer}>
       <div className={styles.row}>
         <LogoWithDetails darkVersion={true} />
-        <div>
+        <div className={styles.socialsWrapper}>
           <span className={styles.socialsTitle}>Redes Sociais</span>
           <div className={styles.socials}>
             <Image src={whatsapp} alt={'Whatsapp'} />

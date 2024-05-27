@@ -1,3 +1,6 @@
+@use 'src/breakpoints.module' as breakpoints;
+
+
 .row {
   display: flex;
   flex-direction: row;
@@ -10,6 +13,11 @@
   height: 9.375rem;
   border-radius: 1.5rem;
   object-fit: cover;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
 }
 
 .column {
@@ -17,6 +25,11 @@
   display: flex;
   flex-direction: column;
   gap: 2.1875rem;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    padding-top: 0;
+    gap: 1rem;
+  }
 }
 
 .column h2 {
@@ -25,6 +38,12 @@
   font-weight: 800;
   font-size: 1.75rem;
   line-height: 100%;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    font-size: 1.6rem;
+    line-height: 150%;
+    margin-top: 0;
+  }
 }
 
 .column p {
@@ -36,4 +55,12 @@
   color: #a1a1a2;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    font-size: 1.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
 }

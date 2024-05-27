@@ -20,7 +20,8 @@ export function PathologySection() {
       <Swiper
         className={styles.swiper}
         slidesPerView={'auto'}
-        spaceBetween={90}
+        centeredSlides={true}
+        spaceBetween={25}
       >
         {pathologies.map((pathology, idx) => (
           <SwiperSlide key={idx} className={styles.slide}>
