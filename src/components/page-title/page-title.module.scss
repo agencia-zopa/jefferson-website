@@ -1,7 +1,7 @@
 @use "src/breakpoints.module" as breakpoints;
 
 .page-title {
-  padding: 3.125rem 6.25rem;
+  padding: 3.125rem 6.25rem 3.125rem 3.125rem;
   width: 100%;
   background-color: #0476f7;
   font-family: Manrope, sans-serif;
@@ -10,6 +10,15 @@
   font-size: 2rem;
   line-height: 1.625rem;
   color: #fff;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  img {
+    width: 3rem;
+    height: auto;
+  }
 
   @include breakpoints.at-or-bigger-than(900px) {
     margin: 6.7rem 0 0;

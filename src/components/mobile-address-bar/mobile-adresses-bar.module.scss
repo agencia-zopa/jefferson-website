@@ -38,7 +38,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 6rem;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -49,6 +48,8 @@
   z-index: 10;
   transform: translateX(100%);
   transition: transform 0.4s;
+  pointer-events: all;
+  padding: 6rem 6rem calc(100vh - 100svh + 5rem);
 }
 
 .address {

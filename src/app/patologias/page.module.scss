@@ -1,8 +1,19 @@
+@use 'src/breakpoints.module' as breakpoints;
+
 .cards {
   padding: 9.375rem;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 5.625rem;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include breakpoints.at-or-smaller-than(1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoints.at-or-smaller-than(900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
