@@ -1,5 +1,5 @@
 import commentIcon from '@public/comment-01.svg';
-import DoctorImage from '@public/IMG_2662.jpg';
+import DoctorImage from '@public/IMG_2650.jpg';
 import Image from 'next/image';
 import React from 'react';
 

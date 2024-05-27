@@ -3,25 +3,34 @@
   background-color: white;
 }
 
+.formWrapper {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .contact-form {
-  margin: 6.25rem auto;
   display: flex;
   flex-direction: column;
   max-width: 56.25rem;
+  width: 100%;
 }
 
 .contact-form label {
-  margin: 1.875rem 0;
+  margin: 1rem 0;
   font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   line-height: 2.5rem;
   color: #1c294d;
 }
 
 .contact-form input,
 .contact-form textarea {
+  margin-bottom: 1.5rem;
   padding: 1.25rem 1.875rem;
   background-color: #f9f9f9;
   border: 0.0625rem solid #ccc;
@@ -30,7 +39,7 @@
   font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
 
   &::placeholder {

@@ -32,7 +32,7 @@ export default function Home() {
         imageSrc={otologiaImage}
         imageAlt={'Dr. Jefferson segurando a cabeça de uma paciente'}
         title={'Otologia'}
-        articleHref={'#'}
+        articleHref={'/especialidades/otologia'}
       >
         A Otologia é uma especialidade médica focada no estudo e tratamento dos
         distúrbios do ouvido e suas estruturas relacionadas. Isso inclui não
@@ -43,7 +43,7 @@ export default function Home() {
         imageSrc={otoneuroImage}
         imageAlt={'Dr. Jefferson examinando uma paciente'}
         title={'Otoneurologia'}
-        articleHref={'#'}
+        articleHref={'/especialidades/otoneurologia'}
         flipped={true}
       >
         A Otoneurologia é uma subespecialidade médica que se concentra no estudo

@@ -12,10 +12,11 @@ interface NavItem {
 
 const navOptions: NavItem[] = [
     { label: 'Apresentação', path: '/', id: SectionIDs.INTRODUCTION },
-    { label: 'Doenças', path: '/' , id: SectionIDs.DISEASES },
+    { label: 'Procedimentos', path: '/' , id: SectionIDs.PROCEDURES },
     { label: 'Patologias', path: '/patologias/' },
     { label: 'Avaliações', path: '/' , id: SectionIDs.REVIEWS },
-    { label: 'Dúvidas', path: '/' , id: SectionIDs.FAQ }
+    { label: 'Dúvidas', path: '/' , id: SectionIDs.FAQ },
+    { label: 'Contato', path: '/contato' },
   ]
 
 export interface NavItemsProps {
@@ -26,7 +27,7 @@ export function NavItems({itemClassName}: NavItemsProps) {
   return navOptions.map(({ label, path, id }) => {
       return (
         <a
-          key={path + 'id'}
+          key={path + id}
           className={itemClassName}
           href={path + '#' + id}
           onClick={e => id !== undefined ? scrollToId(e, path, id) : () => {}}

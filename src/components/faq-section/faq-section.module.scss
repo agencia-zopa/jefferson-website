@@ -14,11 +14,11 @@
 
 .faq-items-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3.75rem 6.875rem;
 
-  @include breakpoints.at-or-smaller-than(1300px) {
-    grid-template-columns: repeat(2, 1fr);
+  @include breakpoints.at-or-bigger-than(1200px) {
+    max-width: 70vw;
   }
 
   @include breakpoints.at-or-smaller-than(900px) {

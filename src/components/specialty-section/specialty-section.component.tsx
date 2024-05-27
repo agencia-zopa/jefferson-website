@@ -20,7 +20,8 @@ export function SpecialtySection({
   imageAlt,
   title,
   children,
-  flipped
+  flipped,
+  articleHref
 }: PropsWithChildren<SpecialtySectionProps>) {
   return (
     <div
@@ -37,12 +38,14 @@ export function SpecialtySection({
             iconSrc={commentIcon}
             textColor={'white'}
             backgroundColor={'#0476F7'}
+            href={process.env.NEXT_PUBLIC_WPP_LINK}
           />
           <GenericButton
             text={'Ler Artigo'}
             iconSrc={commentIcon}
             textColor={'#0476F7'}
             backgroundColor={'white'}
+            href={articleHref}
           />
         </div>
       </div>

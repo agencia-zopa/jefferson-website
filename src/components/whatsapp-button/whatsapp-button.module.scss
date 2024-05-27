@@ -29,10 +29,10 @@
     height: 100%;
   }
 
-  @include at-or-smaller-than(sm) {
+  @include at-or-smaller-than(900px) {
     bottom: 2rem;
     right: 2rem;
-
+    padding: 1rem;
     width: 4.3rem;
     height: 4.3rem;
   }

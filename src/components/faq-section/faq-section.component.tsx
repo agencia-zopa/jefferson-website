@@ -13,53 +13,15 @@ export function FaqSection() {
       <SectionTitle>Perguntas Frequentes</SectionTitle>
       <div className={styles.faqItemsList}>
         <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
+          title={'Quais são as principais especialidades de Jefferson André Bauer?'}
           text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
+            'Jefferson André Bauer é otorrino. Te mostramos alguns dos serviços oferecidos pelo especialista graças à sua trajetória e vasta experiência: Estapedectomia, Mastoidectomia Radical, Nasofibrolaringoscopia, Microcirurgia Otologica, Primeira consulta Otorrinolaringologia, Timpanoplastia (Outros Tipos Unilateral), Videolaringoscopia, Videonasofaringoscopia, Implante Coclear, Consulta Otorrinolaringologia.'
           }
         />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
-        <FaqItem
-          title={'Lorem ipsum dolor sit amet'}
-          text={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere id nunc sed rhoncus. Maecenas a congue turpis. Nulla accumsan neque in est viverra, quis varius ligula rutrum. Vestibulum laoreet lacus non sem blandit porttitor. Donec a erat id sem.'
-          }
-        />
+        <FaqItem title="Posso passar por atendimento online com Jefferson André Bauer, sem ter que ir até o consultório?" text="Não, no momento Jefferson André Bauer não oferece atendimento online." />
+        <FaqItem title="Quais métodos de pagamento são aceitos?" text="Dinheiro, Cartão de Débito, Transferência Bancária, Cartão de Crédito." />
+        <FaqItem title="Em quais idiomas Jefferson André Bauer atende?" text="Em Espanhol, Inglês, Português." />
+        <FaqItem title="Quais são os convênios aceitos?" text="Estes são alguns dos convênios aceitos: Amil, ASSEFAZ (Ministério da Fazenda), Bradesco Saúde, Golden Cross, Mediservice, Omint, AMS Petrobrás, Saúde Caixa (Caixa Econômica Federal). Verifique a lista completa de convênios aceitos." />
       </div>
       <div className={styles.moreQuestions}>
         <h1>Ficou com alguma dúvida?</h1>

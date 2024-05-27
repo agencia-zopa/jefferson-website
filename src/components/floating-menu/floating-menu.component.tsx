@@ -8,10 +8,16 @@ import {useScrollDetection} from "@/hooks/use-scroll-detection";
 import {NavItems} from "@/components/nav-items/nav-items.component";
 import {LogoWithDetails} from "@/components/logo-with-details/logo-with-details.component";
 import {useState} from "react";
+import {useSpecificBreakpoint} from "@/hooks/use-breakpoints";
 
 export function FloatingMenu() {
   const isScrolled = useScrollDetection(10);
   const [modalVisible, setModalVisible] = useState(false);
+
+  const isMobile = useSpecificBreakpoint('lte', 900);
+  if (!isMobile) {
+    return null;
+  }
 
   return <>
     <button className={`${styles.button} ${isScrolled ? styles.isScrolled : ''} `} onClick={() => setModalVisible(true)}>

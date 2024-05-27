@@ -82,7 +82,7 @@
 }
 
 .content {
-  max-width: 56.25rem;
+  max-width: 50%;
   color: white;
 
   @include breakpoints.at-or-smaller-than(1200px) {
@@ -97,6 +97,10 @@
     font-size: 6.25rem;
     line-height: 100%;
 
+    @include breakpoints.at-or-smaller-than(1500px) {
+      font-size: 5.5rem;
+    }
+
     @include breakpoints.at-or-smaller-than(1200px) {
       font-size: 3.6rem;
     }
@@ -109,6 +113,10 @@
     font-weight: 400;
     font-size: 1.75rem;
     line-height: 150%;
+
+    @include breakpoints.at-or-smaller-than(1500px) {
+      font-size: 1.4rem;
+    }
 
     @include breakpoints.at-or-smaller-than(1200px) {
       font-size: 1.4rem;

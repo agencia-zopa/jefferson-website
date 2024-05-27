@@ -8,6 +8,8 @@ import { breakpoints, useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
 import styles from './navbar.module.scss';
+import {useScrollDetection} from "@/hooks/use-scroll-detection";
+import {NavItems} from "@/components/nav-items/nav-items.component";
 
 interface NavItem {
   label: string;
@@ -15,16 +17,11 @@ interface NavItem {
 }
 
 export function Navbar() {
-  const currentPath = usePathname();
   const isMobile = useSpecificBreakpoint('lte', 900);
-  const [selectedOption, setSelectedOption] = useState<string>();
 
-  const showCta = useSpecificBreakpoint('gte', 1400);
   const hideLogoDetails = useSpecificBreakpoint('lte', 1100);
 
-  const handleOptionClick = (option: string) => {
-    setSelectedOption(option);
-  };
+  const isScrolled = useScrollDetection(10);
 
   const navOptions: NavItem[] = useMemo(
     () => [
@@ -37,41 +34,17 @@ export function Navbar() {
     []
   );
 
-  // FIXME: This has a delay in updating the selected option - maybe go for another approach
-  useEffect(() => {
-    const matchingOption = navOptions.find(
-      option => option.href === currentPath
-    );
-
-    if (matchingOption) {
-      setSelectedOption(matchingOption.href);
-    }
-  }, [currentPath, navOptions]);
-
   if (isMobile) {
     return null;
   }
 
   return (
-    <nav className={styles.container}>
+    <nav className={`${styles.container} ${isScrolled ? styles.shadow : ''}`}>
       <LogoWithDetails hideDetails={hideLogoDetails}/>
       <div className={styles.items}>
-        {navOptions.map(({ label, href }) => {
-          const isSelected = href === selectedOption;
-
-          return (
-            <a
-              key={href}
-              className={isSelected ? styles.selected : ''}
-              href={href}
-              onClick={() => handleOptionClick(href)}
-            >
-              {label}
-            </a>
-          );
-        })}
+        <NavItems />
       </div>
-      {showCta && <ScheduleAppointment hasShadow={true}/>}
+      <div className={styles.ctaWrapper}><ScheduleAppointment hasShadow={true}/></div>
     </nav>
   );
 }

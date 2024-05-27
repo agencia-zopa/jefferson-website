@@ -8,8 +8,8 @@ import { Navbar } from '@/components/navbar/navbar.component';
 import {WhatsappButton} from "@/components/whatsapp-button/whatsapp-button.component";
 
 export const metadata: Metadata = {
-  title: 'Teste',
-  description: ''
+  title: 'Dr. Jefferson André Bauer',
+  description: 'Otorrinolaringologista com mais de 5 anos de experiência especializado em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.'
 };
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ export function ScheduleAppointment({ hasShadow }: ScheduleAppointmentProps) {
   return (
     <a
       className={`${styles.buttonContainer} ${hasShadow ? styles.shadow : ''}`}
-      href={'#'}
+      href={process.env.NEXT_PUBLIC_WPP_LINK}
     >
       <p className={styles.buttonText}>Agendar Consulta</p>
       <Image
