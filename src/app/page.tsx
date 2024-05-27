@@ -7,26 +7,26 @@ import React from 'react';
 import { AddressBar } from '@/components/address-bar/adresses-bar.component';
 import { ConveniosSection } from '@/components/convenios-section/convenios-section.component';
 import { FaqSection } from '@/components/faq-section/faq-section.component';
+import { FloatingMenu } from '@/components/floating-menu/floating-menu.component';
 import { InitialSection } from '@/components/initial-section/initial-section.component';
 import { PresentationSection } from '@/components/introduction-section/introduction-section.component';
+import { MobileAddressBar } from '@/components/mobile-address-bar/mobile-adresses-bar.component';
 import { PathologySection } from '@/components/pathology-section/pathology-section.component';
 import { ProceduresSection } from '@/components/procedures-section/procedures-section.component';
 import { ReviewsSection } from '@/components/reviews-section/reviews-section.component';
 import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
 import { SpecialtySection } from '@/components/specialty-section/specialty-section.component';
-import {MobileAddressBar} from "@/components/mobile-address-bar/mobile-adresses-bar.component";
-import {useSpecificBreakpoint} from "@/hooks/use-breakpoints";
-import {FloatingMenu} from "@/components/floating-menu/floating-menu.component";
+import { useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 
 export default function Home() {
   const isMobile = useSpecificBreakpoint('lte', 900);
 
   return (
     <>
-      {!isMobile && <AddressBar/>}
+      {!isMobile && <AddressBar />}
       <InitialSection />
       {isMobile && <FloatingMenu />}
-      {isMobile && <MobileAddressBar/>}
+      {isMobile && <MobileAddressBar />}
       <PresentationSection />
       <SpecialtySection
         imageSrc={otologiaImage}

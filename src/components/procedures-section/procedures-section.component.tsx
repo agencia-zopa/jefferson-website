@@ -6,7 +6,7 @@ import styles from './procedures-section.module.scss';
 
 export function ProceduresSection() {
   return (
-    <div className={styles.proceduresSection} id="procedimentos">
+    <div className={styles.proceduresSection} id={'procedimentos'}>
       <SectionTitle>Procedimentos</SectionTitle>
       <div className={styles.proceduresList}>
         {procedures.map((procedure, index) => (

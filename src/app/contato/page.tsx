@@ -8,10 +8,10 @@ import Image from 'next/image';
 import React, { useCallback } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
+import { FloatingMenu } from '@/components/floating-menu/floating-menu.component';
 import { PageTitle } from '@/components/page-title/page-title.component';
 
 import styles from './page.module.scss';
-import {FloatingMenu} from "@/components/floating-menu/floating-menu.component";
 
 interface FormValues {
   name: string;

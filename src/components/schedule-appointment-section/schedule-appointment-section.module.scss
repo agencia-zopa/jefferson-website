@@ -1,5 +1,4 @@
-@use 'src/breakpoints.module' as breakpoints;
-
+@use "src/breakpoints.module" as breakpoints;
 
 .container {
   display: flex;
@@ -59,7 +58,6 @@
   height: auto;
   border-top-left-radius: 6.25rem;
   border-bottom-left-radius: 6.25rem;
-
   aspect-ratio: 1;
   object-fit: cover;
 

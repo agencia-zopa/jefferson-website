@@ -3,12 +3,12 @@
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { pathologies, Pathology } from './specialties';
 import { PresentationSection } from '@/components/introduction-section/introduction-section.component';
 import { PageTitle } from '@/components/page-title/page-title.component';
 import { ScheduleAppointmentSection } from '@/components/schedule-appointment-section/schedule-appointment-section.component';
 
 import styles from './page.module.scss';
+import { pathologies, Pathology } from './specialties';
 
 interface PathologyDetailsPageProps {
   params: { name: string };
@@ -25,7 +25,7 @@ export default function PathologyDetailsPage({
       .flatMap(pathology => pathology.urls)
       .includes(name);
 
-    console.log(name)
+    console.log(name);
 
     if (!isNameValid) {
       router.replace('/');

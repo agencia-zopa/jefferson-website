@@ -1,5 +1,4 @@
-@use 'src/breakpoints.module' as breakpoints;
-
+@use "src/breakpoints.module" as breakpoints;
 
 .container {
   background-color: #d1e2f6;
@@ -32,7 +31,6 @@
 .swiperWrapper {
   align-items: stretch;
 }
-
 
 .swiperSlide {
   width: calc(100vw - 10rem);

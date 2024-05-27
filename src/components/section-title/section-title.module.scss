@@ -1,5 +1,4 @@
-@use 'src/breakpoints.module' as breakpoints;
-
+@use "src/breakpoints.module" as breakpoints;
 
 .title {
   position: relative;
@@ -8,20 +7,15 @@
   font-size: 3.125rem;
   font-weight: 800;
   color: #1c294d;
-  //text-decoration: underline;
-  //text-decoration-color: #0476f7;
-  //text-underline-offset: 1.25rem;
-  //text-decoration-thickness: 0.3125rem;
   text-align: center;
 
   @include breakpoints.at-or-smaller-than(600px) {
     width: min-content;
   }
-
 }
 
 .title::after {
-  content: '';
+  content: "";
   display: block;
   left: 0;
   right: 0;

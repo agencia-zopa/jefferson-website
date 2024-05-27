@@ -1,12 +1,11 @@
-import aplicacaoCorticoide from '@public/procedimentos/aplicação-corticoide.jpeg'
-import estapedotomia from '@public/procedimentos/estapedotomia.jpeg'
-import implanteCoclear from '@public/procedimentos/implante-coclear.jpeg'
-import manobrasDeReposicionamento from '@public/procedimentos/manobras-de-reposicionamento.jpeg'
-import protesesAuditivas from '@public/procedimentos/proteses-auditivas.webp'
-import timpanoplastia from '@public/procedimentos/timpanoplastia.jpeg'
-import timpanotomia from '@public/procedimentos/timpanotomia.jpeg'
-import mastoidectomia from '@public/procedimentos/mastoidectomia.jpeg'
-
+import aplicacaoCorticoide from '@public/procedimentos/aplicação-corticoide.jpeg';
+import estapedotomia from '@public/procedimentos/estapedotomia.jpeg';
+import implanteCoclear from '@public/procedimentos/implante-coclear.jpeg';
+import manobrasDeReposicionamento from '@public/procedimentos/manobras-de-reposicionamento.jpeg';
+import mastoidectomia from '@public/procedimentos/mastoidectomia.jpeg';
+import protesesAuditivas from '@public/procedimentos/proteses-auditivas.webp';
+import timpanoplastia from '@public/procedimentos/timpanoplastia.jpeg';
+import timpanotomia from '@public/procedimentos/timpanotomia.jpeg';
 
 import { ProcedureItemProps } from '@/components/procedure-item/procedure-item.component';
 

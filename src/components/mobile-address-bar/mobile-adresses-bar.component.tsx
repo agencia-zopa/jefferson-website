@@ -1,10 +1,10 @@
 import ArrowRight from '@public/arrow-right.svg';
+import closeIcon from '@public/close.svg';
 import locationIcon from '@public/location-icon.svg';
 import Image from 'next/image';
+import { useState } from 'react';
 
 import styles from './mobile-adresses-bar.module.scss';
-import {useState} from "react";
-import closeIcon from "@public/close.svg";
 
 interface Address {
   title: string;
@@ -44,12 +44,17 @@ export function MobileAddressBar() {
         </div>
         <Image src={ArrowRight} alt={''} />
       </div>
-      <div className={`${styles.menuModal} ${isModalOpen ? styles.visible : ''}`}>
-        <button className={styles.closeButton} onClick={e => {
-          setIsModalOpen(false);
-          e.stopPropagation()
-        }}>
-          <Image src={closeIcon} alt="Icone de fechar" />
+      <div
+        className={`${styles.menuModal} ${isModalOpen ? styles.visible : ''}`}
+      >
+        <button
+          className={styles.closeButton}
+          onClick={e => {
+            setIsModalOpen(false);
+            e.stopPropagation();
+          }}
+        >
+          <Image src={closeIcon} alt={'Icone de fechar'} />
         </button>
         {addresses.map(({ title, description }, index) => (
           <div className={styles.address} key={index}>

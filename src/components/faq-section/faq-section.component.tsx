@@ -13,15 +13,37 @@ export function FaqSection() {
       <SectionTitle>Perguntas Frequentes</SectionTitle>
       <div className={styles.faqItemsList}>
         <FaqItem
-          title={'Quais são as principais especialidades de Jefferson André Bauer?'}
+          title={
+            'Quais são as principais especialidades de Jefferson André Bauer?'
+          }
           text={
             'Jefferson André Bauer é otorrino. Te mostramos alguns dos serviços oferecidos pelo especialista graças à sua trajetória e vasta experiência: Estapedectomia, Mastoidectomia Radical, Nasofibrolaringoscopia, Microcirurgia Otologica, Primeira consulta Otorrinolaringologia, Timpanoplastia (Outros Tipos Unilateral), Videolaringoscopia, Videonasofaringoscopia, Implante Coclear, Consulta Otorrinolaringologia.'
           }
         />
-        <FaqItem title="Posso passar por atendimento online com Jefferson André Bauer, sem ter que ir até o consultório?" text="Não, no momento Jefferson André Bauer não oferece atendimento online." />
-        <FaqItem title="Quais métodos de pagamento são aceitos?" text="Dinheiro, Cartão de Débito, Transferência Bancária, Cartão de Crédito." />
-        <FaqItem title="Em quais idiomas Jefferson André Bauer atende?" text="Em Espanhol, Inglês, Português." />
-        <FaqItem title="Quais são os convênios aceitos?" text="Estes são alguns dos convênios aceitos: Amil, ASSEFAZ (Ministério da Fazenda), Bradesco Saúde, Golden Cross, Mediservice, Omint, AMS Petrobrás, Saúde Caixa (Caixa Econômica Federal). Verifique a lista completa de convênios aceitos." />
+        <FaqItem
+          title={
+            'Posso passar por atendimento online com Jefferson André Bauer, sem ter que ir até o consultório?'
+          }
+          text={
+            'Não, no momento Jefferson André Bauer não oferece atendimento online.'
+          }
+        />
+        <FaqItem
+          title={'Quais métodos de pagamento são aceitos?'}
+          text={
+            'Dinheiro, Cartão de Débito, Transferência Bancária, Cartão de Crédito.'
+          }
+        />
+        <FaqItem
+          title={'Em quais idiomas Jefferson André Bauer atende?'}
+          text={'Em Espanhol, Inglês, Português.'}
+        />
+        <FaqItem
+          title={'Quais são os convênios aceitos?'}
+          text={
+            'Estes são alguns dos convênios aceitos: Amil, ASSEFAZ (Ministério da Fazenda), Bradesco Saúde, Golden Cross, Mediservice, Omint, AMS Petrobrás, Saúde Caixa (Caixa Econômica Federal). Verifique a lista completa de convênios aceitos.'
+          }
+        />
       </div>
       <div className={styles.moreQuestions}>
         <h1>Ficou com alguma dúvida?</h1>

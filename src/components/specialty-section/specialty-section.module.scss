@@ -1,4 +1,4 @@
-@use 'src/breakpoints.module' as breakpoints;
+@use "src/breakpoints.module" as breakpoints;
 
 .specialty-section {
   padding: 12.5rem 5rem;
@@ -53,10 +53,10 @@
 
   @include breakpoints.at-or-smaller-than(1200px) {
     background: linear-gradient(
-                    0deg,
-                    #1c294d 0%,
-                    #1c294d 50%,
-                    rgb(28 41 77 / 0%) 80%
+      0deg,
+      #1c294d 0%,
+      #1c294d 50%,
+      rgb(28 41 77 / 0%) 80%
     );
   }
 }
@@ -73,10 +73,10 @@
 
   @include breakpoints.at-or-smaller-than(1200px) {
     background: linear-gradient(
-                    0deg,
-                    #1c294d 0%,
-                    #1c294d 50%,
-                    rgb(28 41 77 / 0%) 80%
+      0deg,
+      #1c294d 0%,
+      #1c294d 50%,
+      rgb(28 41 77 / 0%) 80%
     );
   }
 }

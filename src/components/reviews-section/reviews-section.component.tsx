@@ -1,40 +1,43 @@
 'use client';
 
+import 'swiper/scss';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { SectionIDs } from '@/app/section-ids';
-
-
 import { Review, ReviewProps } from '@/components/review/review.component';
 import { SectionTitle } from '@/components/section-title/section-title.component';
+import { useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 
 import styles from './reviews-section.module.scss';
-
-import 'swiper/scss';
-import {Swiper, SwiperSlide} from "swiper/react";
-import {useSpecificBreakpoint} from "@/hooks/use-breakpoints";
 
 export function ReviewsSection() {
   const isMobile = useSpecificBreakpoint('lte', 900);
   return (
     <div className={styles.container} id={SectionIDs.REVIEWS}>
       <SectionTitle>Algumas avaliações</SectionTitle>
-      {isMobile && <Swiper
-        className={styles.swiper}
-        slidesPerView={'auto'}
-        centeredSlides={true}
-        spaceBetween={25}
-        wrapperClass={styles.swiperWrapper}
-      >
-        {reviews.map((review, index) => (
-          <SwiperSlide key={index} className={styles.swiperSlide}>
-            <Review {...review} />
-          </SwiperSlide>
-        ))}
-      </Swiper>}
-      {!isMobile && <div className={styles.grid}>
-        {reviews.map((review, index) => (
-          <Review key={index} {...review} />
-        ))}
-      </div>}
+      {isMobile && (
+        <Swiper
+          className={styles.swiper}
+          slidesPerView={'auto'}
+          centeredSlides={true}
+          spaceBetween={25}
+          wrapperClass={styles.swiperWrapper}
+        >
+          {reviews.map((review, index) => (
+            <SwiperSlide key={index} className={styles.swiperSlide}>
+              <Review {...review} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
+      {!isMobile && (
+        <div className={styles.grid}>
+          {reviews.map((review, index) => (
+            <Review key={index} {...review} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

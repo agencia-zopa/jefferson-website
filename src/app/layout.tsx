@@ -5,11 +5,12 @@ import React from 'react';
 
 import { Footer } from '@/components/footer/footer.component';
 import { Navbar } from '@/components/navbar/navbar.component';
-import {WhatsappButton} from "@/components/whatsapp-button/whatsapp-button.component";
+import { WhatsappButton } from '@/components/whatsapp-button/whatsapp-button.component';
 
 export const metadata: Metadata = {
   title: 'Dr. Jefferson André Bauer',
-  description: 'Otorrinolaringologista com mais de 5 anos de experiência especializado em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.'
+  description:
+    'Otorrinolaringologista com mais de 5 anos de experiência especializado em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.'
 };
 
 export default function RootLayout({

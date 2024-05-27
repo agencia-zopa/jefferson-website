@@ -1,5 +1,4 @@
-@use 'src/breakpoints.module' as breakpoints;
-
+@use "src/breakpoints.module" as breakpoints;
 
 .procedures-section {
   padding: 6.25rem;
@@ -9,7 +8,7 @@
   align-items: center;
 
   @include breakpoints.at-or-smaller-than(1200px) {
-     padding: 5rem 2.5rem;
+    padding: 5rem 2.5rem;
   }
 }
 
