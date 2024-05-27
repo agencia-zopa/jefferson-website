@@ -1,0 +1,41 @@
+.container {
+  min-height: 64.0625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    border-top-right-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    max-width: 51.125rem;
+    height: auto;
+  }
+}
+
+.content {
+  padding: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1c294d;
+  }
+
+  p,
+  ul {
+    font-family: Inter, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8125rem;
+    color: #595959;
+    list-style-type: none;
+  }
+}
+
+.divider {
+  width: 5.8125rem;
+  border-bottom: 0.0625rem solid rgb(89 89 89 / 50%);
+}

@@ -1,4 +1,7 @@
 import commentIcon from '@public/comment-01.svg';
+import DoctorImage from '@public/IMG_2662.jpg';
+import Image from 'next/image';
+import React from 'react';
 
 import { GenericButton } from '@/components/generic-button/generic-button.component';
 
@@ -7,8 +10,12 @@ import styles from './schedule-appointment-section.module.scss';
 export function ScheduleAppointmentSection() {
   return (
     <div className={styles.container}>
-      <div className={styles.contentContainer}>
-        <h1 className={styles.title}>Marque sua Consulta!</h1>
+      <div className={styles.content}>
+        <h1 className={styles.title}>
+          Marque sua
+          <br />
+          Consulta!
+        </h1>
         <p className={styles.text}>
           Otorrinolaringologista com mais de 5 anos de experiência especializado
           em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.
@@ -20,7 +27,8 @@ export function ScheduleAppointmentSection() {
           iconSrc={commentIcon}
         />
       </div>
-      <div className={styles.imageContainer} />
+      {/* FIXME: This is not the right image */}
+      <Image src={DoctorImage} alt={''} />
     </div>
   );
 }
