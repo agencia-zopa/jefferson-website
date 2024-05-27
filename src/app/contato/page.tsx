@@ -25,8 +25,6 @@ export default function ContactPage() {
     async (values: FormValues, formikHelpers: FormikHelpers<FormValues>) => {
       formikHelpers.setSubmitting(true);
 
-      console.log(JSON.stringify(values));
-
       try {
         const result = await fetch(`${window.location.origin}/api/send-email`, {
           method: 'POST',
@@ -173,7 +171,6 @@ export default function ContactPage() {
               Seus dados serão armazenados de maneira segura e serão usado
               apenas com o objetivo de entrar em contato.
             </p>
-
             <button type={'submit'}>
               {isSubmitting ? (
                 <Image src={loadingIcon} alt={'enviando...'} />

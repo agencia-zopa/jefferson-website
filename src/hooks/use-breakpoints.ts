@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import scssBreakpoints from '@/app/breakpoints.module.scss';
+import scssBreakpoints from '@/breakpoints.module.scss';
 import { useWindowEvent } from '@/hooks/use-window-event';
 
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg';

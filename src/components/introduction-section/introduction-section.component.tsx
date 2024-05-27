@@ -1,20 +1,27 @@
-import styles from './presentation-section.module.scss';
+import DoctorImage from '@public/IMG_2662.jpg';
+import Image from 'next/image';
+import React from 'react';
+
+import { SectionIDs } from '@/app/section-ids';
+
+import styles from './introduction-section.module.scss';
 
 export function PresentationSection() {
   return (
-    <div className={styles.container} id={'apresentacao'}>
-      <div className={styles.imageContainer} />
-      <div className={styles.contentContainer}>
-        <div className={styles.title}>Dr. Jefferson André Bauer</div>
+    <div className={styles.container} id={SectionIDs.INTRODUCTION}>
+      <Image src={DoctorImage} alt={''} />
+      <div className={styles.content}>
+        <h1>Dr. Jefferson André Bauer</h1>
         <div className={styles.divider} />
-        <div className={styles.text}>
+        <p>
           Otorrinolaringologista com mais de 5 anos de experiência especializado
           em Otologia Cirúrgica, Otologia Clínica, Otoneurologia. O meu número
           de registro profissional: 35975.
-        </div>
+        </p>
         <div className={styles.divider} />
-        <div className={styles.title}>Formação</div>
-        <ul className={styles.text}>
+        <h1>Formação</h1>
+
+        <ul>
           <li>
             - Mestrado em Cirurgia, Universidade Federal do Rio Grande do Sul,
             2016

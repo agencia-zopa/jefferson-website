@@ -1,44 +1,48 @@
 .about {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  gap: 0.9375rem;
+  text-decoration: none;
+  color: black;
 
   &.dark {
     color: white;
   }
 }
 
-.doctor-name {
-  font-size: 20px;
+.name {
+  font-size: 1.25rem;
   font-weight: 800;
-  margin-left: 15px;
-  margin-right: 18px;
-  line-height: 24px;
+  line-height: 120%;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.doctor-info {
-  margin-left: 13px;
-  padding: 7px 0;
+.info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 2px;
+  gap: 0.3125rem;
+
+  span {
+    font-size: 0.875rem;
+    line-height: 70%;
+  }
+
+  span:first-of-type {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 100%;
+  }
 }
 
-.specialization {
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
-}
+.pipe {
+  width: 0.0625rem;
+  align-self: stretch;
+  border: 0.0625rem solid black;
+  opacity: 0.5;
 
-.crm {
-  font-size: 14px;
-  line-height: 10px;
-}
-
-.rqe {
-  font-size: 14px;
-  line-height: 10px;
+  &.dark {
+    border-color: white;
+  }
 }

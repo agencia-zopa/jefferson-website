@@ -12,10 +12,13 @@ export function InitialSection() {
   const isScrolled = useScrollDetection(100);
 
   return (
-    <div className={styles.initialSectionContainer}>
-      <div className={styles.initialSectionContent}>
-        <span className={styles.doctorName}>Dr. Jefferson André Bauer</span>
-        <span className={styles.doctorBio}>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <span className={styles.title}>
+          Dr. Jefferson <br />
+          André Bauer
+        </span>
+        <span className={styles.description}>
           Otorrinolaringologista com mais de 5 anos de experiência especializado
           em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.
         </span>

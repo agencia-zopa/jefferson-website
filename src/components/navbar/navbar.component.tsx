@@ -1,71 +1,75 @@
 'use client';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
 
+import { SectionIDs } from '@/app/section-ids';
 import { LogoWithDetails } from '@/components/logo-with-details/logo-with-details.component';
+import { NavbarMobile } from '@/components/navbar/navbar-mobile/navbar-mobile.component';
+import { breakpoints, useSpecificBreakpoint } from '@/hooks/use-breakpoints';
 
 import { ScheduleAppointment } from '../schedule-appointment/schedule-appointment.component';
 import styles from './navbar.module.scss';
 
+interface NavItem {
+  label: string;
+  href: string;
+}
+
 export function Navbar() {
-  const [selectedOption, setSelectedOption] = useState('apresentacao');
+  const currentPath = usePathname();
+  const isMobile = useSpecificBreakpoint('lte', breakpoints['xs-max']);
+  const [selectedOption, setSelectedOption] = useState<string>();
 
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
   };
 
+  const navOptions: NavItem[] = useMemo(
+    () => [
+      { label: 'Apresentação', href: '/#' + SectionIDs.INTRODUCTION },
+      { label: 'Doenças', href: '/#' + SectionIDs.DISEASES },
+      { label: 'Patologias', href: '/patologias' },
+      { label: 'Avaliações', href: '/#' + SectionIDs.REVIEWS },
+      { label: 'Dúvidas', href: '/#' + SectionIDs.FAQ }
+    ],
+    []
+  );
+
+  // FIXME: This has a delay in updating the selected option - maybe go for another approach
+  useEffect(() => {
+    const matchingOption = navOptions.find(
+      option => option.href === currentPath
+    );
+
+    if (matchingOption) {
+      setSelectedOption(matchingOption.href);
+    }
+  }, [currentPath, navOptions]);
+
+  if (isMobile) {
+    return <NavbarMobile />;
+  }
+
   return (
     <nav className={styles.container}>
       <LogoWithDetails />
-      <div className={styles.navOptions}>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'apresentacao' ? styles.selected : ''
-          }`}
-          href={'#apresentacao'}
-          onClick={() => handleOptionClick('apresentacao')}
-        >
-          Apresentação
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'doencas' ? styles.selected : ''
-          }`}
-          href={'#'}
-          onClick={() => handleOptionClick('doencas')}
-        >
-          Doenças
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'patologias' ? styles.selected : ''
-          }`}
-          href={'#patologias'}
-          onClick={() => handleOptionClick('patologias')}
-        >
-          Patologias
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'avaliacoes' ? styles.selected : ''
-          }`}
-          href={'#avaliacoes'}
-          onClick={() => handleOptionClick('avaliacoes')}
-        >
-          Avaliações
-        </a>
-        <a
-          className={`${styles.navItem} ${
-            selectedOption === 'duvidas' ? styles.selected : ''
-          }`}
-          href={'#faq'}
-          onClick={() => handleOptionClick('duvidas')}
-        >
-          Dúvidas
-        </a>
+      <div className={styles.items}>
+        {navOptions.map(({ label, href }) => {
+          const isSelected = href === selectedOption;
+
+          return (
+            <a
+              key={href}
+              className={isSelected ? styles.selected : ''}
+              href={href}
+              onClick={() => handleOptionClick(href)}
+            >
+              {label}
+            </a>
+          );
+        })}
       </div>
-      <div>
-        <ScheduleAppointment hasShadow={true} />
-      </div>
+      <ScheduleAppointment hasShadow={true} />
     </nav>
   );
 }

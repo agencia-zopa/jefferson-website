@@ -10,7 +10,7 @@ export interface FaqItemProps {
 
 export function FaqItem({ title, text }: FaqItemProps) {
   return (
-    <div>
+    <div className={styles.faqItem}>
       <div className={styles.iconWrapper}>
         <Image src={commentIcon} alt={''} />
       </div>
