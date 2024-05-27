@@ -28,9 +28,11 @@ export function InitialSection() {
         </div>
       </div>
       <Image
+        priority={true}
         src={mouseIcon}
         alt={'Ícone de mouse'}
         className={`${styles.mouseIcon} ${isScrolled ? styles.inverted : ''}`}
+        sizes="100vw"
       />
     </div>
   );
