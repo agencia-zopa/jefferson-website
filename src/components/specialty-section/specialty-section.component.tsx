@@ -1,7 +1,7 @@
 import commentIcon from '@public/comment-01.svg';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
-import { PropsWithChildren } from 'react';
+import { CSSProperties, PropsWithChildren } from 'react';
 
 import { GenericButton } from '@/components/generic-button/generic-button.component';
 
@@ -10,9 +10,11 @@ import styles from './specialty-section.module.scss';
 export interface SpecialtySectionProps {
   imageSrc: string | StaticImport;
   imageAlt: string;
+  imageStyle: CSSProperties;
   title: string;
   articleHref: string;
   flipped?: boolean;
+  extendedFade?: boolean;
 }
 
 export function SpecialtySection({
@@ -21,13 +23,20 @@ export function SpecialtySection({
   title,
   children,
   flipped,
-  articleHref
+  articleHref,
+  imageStyle,
+  extendedFade
 }: PropsWithChildren<SpecialtySectionProps>) {
   return (
     <div
-      className={`${styles.specialtySection} ${flipped ? styles.flipped : ''}`}
+      className={`${styles.specialtySection} ${flipped ? styles.flipped : ''} ${extendedFade ? styles.extendedFade : ''}`}
     >
-      <Image className={styles.backgroundImage} src={imageSrc} alt={imageAlt} />
+      <Image
+        style={imageStyle}
+        className={styles.backgroundImage}
+        src={imageSrc}
+        alt={imageAlt}
+      />
       <div className={styles.backgroundImageFade} />
       <div className={styles.content}>
         <h1>{title}</h1>

@@ -2,7 +2,7 @@
 
 import otoneuroImage from '@public/IMG_2621.jpg';
 import otologiaImage from '@public/IMG_2636.jpg';
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 import { AddressBar } from '@/components/address-bar/adresses-bar.component';
 import { ConveniosSection } from '@/components/convenios-section/convenios-section.component';
@@ -29,10 +29,18 @@ export default function Home() {
       <MobileAddressBar />
       <PresentationSection />
       <SpecialtySection
-        imageSrc={otologiaImage}
+        imageSrc={otoneuroImage}
+        flipped={true}
         imageAlt={'Dr. Jefferson segurando a cabeça de uma paciente'}
         title={'Otologia'}
         articleHref={'/especialidades/otologia'}
+        imageStyle={
+          {
+            objectPosition: '50% 20%',
+            'object-view-box': isMobile ? 'inset(0% 0% 0% 60%)' : undefined
+          } as CSSProperties
+        }
+        extendedFade={true}
       >
         A Otologia é uma especialidade médica focada no estudo e tratamento dos
         distúrbios do ouvido e suas estruturas relacionadas. Isso inclui não
@@ -40,25 +48,26 @@ export default function Home() {
         conexões neurais que transmitem informações auditivas ao cérebro.
       </SpecialtySection>
       <SpecialtySection
-        imageSrc={otoneuroImage}
+        imageSrc={otologiaImage}
         imageAlt={'Dr. Jefferson examinando uma paciente'}
         title={'Otoneurologia'}
         articleHref={'/especialidades/otoneurologia'}
-        flipped={true}
+        imageStyle={
+          {
+            'object-view-box': isMobile ? 'inset(0% 10% 25% -14%)' : undefined
+          } as CSSProperties
+        }
       >
         A Otoneurologia é uma subespecialidade médica que se concentra no estudo
         e tratamento dos distúrbios relacionados ao ouvido interno e ao sistema
-        nervoso vestibular, responsável pelo equilíbrio e pela orientação
-        espacial. Ela combina os campos da otologia (estudo do ouvido) e da
-        neurologia (estudo do sistema nervoso) para abordar condições que afetam
-        tanto a audição quanto o equilíbrio.
+        vestibular, responsável pelo equilíbrio e pela orientação espacial. Ela
+        aborda condições que afetam tanto a audição quanto o equilíbrio.
       </SpecialtySection>
       <ProceduresSection />
       <PathologySection />
       <ReviewsSection />
       <ScheduleAppointmentSection />
       <ConveniosSection />
-      <FaqSection />
     </>
   );
 }

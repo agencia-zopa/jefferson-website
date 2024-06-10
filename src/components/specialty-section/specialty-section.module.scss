@@ -55,6 +55,16 @@
   );
   z-index: -1;
 
+  .extendedFade & {
+    background: linear-gradient(
+      280.52deg,
+      #1c294d 22.93%,
+      #1c294d 27.23%,
+      rgb(28 41 77 / 45%) 70.25%,
+      rgb(28 41 77 / 0%) 80.33%
+    );
+  }
+
   @include at-or-smaller-than(1200px) {
     background: linear-gradient(
       0deg,
@@ -73,6 +83,25 @@
     rgb(28 41 77 / 45%) 52.25%,
     rgb(28 41 77 / 0%) 63.33%,
     rgb(28 41 77 / 0%) 114.47%
+  );
+
+  @include at-or-smaller-than(1200px) {
+    background: linear-gradient(
+      0deg,
+      #1c294d 0%,
+      #1c294d 50%,
+      rgb(28 41 77 / 0%) 80%
+    );
+  }
+}
+
+.extendedFade.flipped .background-image-fade {
+  background: linear-gradient(
+    80.52deg,
+    #1c294d 22.93%,
+    #1c294d 60.23%,
+    rgb(28 41 77 / 45%) 75.25%,
+    rgb(28 41 77 / 0%) 80.33%
   );
 
   @include at-or-smaller-than(1200px) {
