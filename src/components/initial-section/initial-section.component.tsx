@@ -19,8 +19,9 @@ export function InitialSection() {
           André Bauer
         </span>
         <span className={styles.description}>
-          Otorrinolaringologista com mais de 5 anos de experiência especializado
-          em Otologia Cirúrgica, Otologia Clínica, Otoneurologia.
+          Otorrinolaringologista atuando desde 2015. Atendimento de doenças do
+          nariz, garganta e ouvidos. Especializado em Otologia Cirurgica,
+          Otologia Clinica e Otoneurologia.
         </span>
         <div className={styles.buttons}>
           <ScheduleAppointment />

@@ -14,9 +14,9 @@ export function PresentationSection() {
         <h1>Dr. Jefferson André Bauer</h1>
         <div className={styles.divider} />
         <p>
-          Otorrinolaringologista com mais de 5 anos de experiência especializado
-          em Otologia Cirúrgica, Otologia Clínica, Otoneurologia. O meu número
-          de registro profissional: 35975.
+          Otorrinolaringologista atuando desde 2015. Atendimento de doenças do
+          nariz, garganta e ouvidos. Especializado em Otologia Cirurgica,
+          Otologia Clinica e Otoneurologia.
         </p>
         <div className={styles.divider} />
         <h1>Formação</h1>
@@ -25,6 +25,10 @@ export function PresentationSection() {
           <li>
             - Mestrado em Cirurgia, Universidade Federal do Rio Grande do Sul,
             2016
+          </li>
+          <li>
+            - Curso de Cirurgia Otológica em Béziers/França – 17th International
+            Otology Course – Causse Ear Clinic (2015)
           </li>
           <li>
             - Fellowship Otologia Clínica e Cirúrgica, Hospital Mãe de Deus,

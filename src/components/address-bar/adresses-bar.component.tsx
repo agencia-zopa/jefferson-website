@@ -10,7 +10,7 @@ interface Address {
 
 const addresses: Address[] = [
   {
-    title: 'Petrópolis',
+    title: 'Consultório Mont’Serrat',
     description:
       'Av. Cel. Lucas De Oliveira, 505 - Sala 302 - Petrópolis, Porto Alegre - RS, 90440-011'
   },
