@@ -10,7 +10,7 @@ import styles from './specialty-section.module.scss';
 export interface SpecialtySectionProps {
   imageSrc: string | StaticImport;
   imageAlt: string;
-  imageStyle: CSSProperties;
+  imageStyle?: CSSProperties;
   title: string;
   articleHref: string;
   flipped?: boolean;

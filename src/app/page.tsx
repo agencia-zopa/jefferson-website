@@ -1,7 +1,9 @@
 'use client';
 
 import otoneuroImage from '@public/IMG_2621.jpg';
+import otoneuroImageCropped from '@public/IMG_2621_cropped.jpg';
 import otologiaImage from '@public/IMG_2636.jpg';
+import otologiaImageCropped from '@public/IMG_2636_cropped.png';
 import React, { CSSProperties } from 'react';
 
 import { AddressBar } from '@/components/address-bar/adresses-bar.component';
@@ -29,17 +31,11 @@ export default function Home() {
       <MobileAddressBar />
       <PresentationSection />
       <SpecialtySection
-        imageSrc={otoneuroImage}
+        imageSrc={isMobile ? otoneuroImageCropped : otoneuroImage}
         flipped={true}
         imageAlt={'Dr. Jefferson segurando a cabeça de uma paciente'}
         title={'Otologia'}
         articleHref={'/especialidades/otologia'}
-        imageStyle={
-          {
-            objectPosition: '50% 20%',
-            'object-view-box': isMobile ? 'inset(0% 0% 0% 60%)' : undefined
-          } as CSSProperties
-        }
         extendedFade={true}
       >
         A Otologia é uma especialidade médica focada no estudo e tratamento dos
@@ -48,15 +44,10 @@ export default function Home() {
         conexões neurais que transmitem informações auditivas ao cérebro.
       </SpecialtySection>
       <SpecialtySection
-        imageSrc={otologiaImage}
+        imageSrc={isMobile ? otologiaImageCropped : otologiaImage}
         imageAlt={'Dr. Jefferson examinando uma paciente'}
         title={'Otoneurologia'}
         articleHref={'/especialidades/otoneurologia'}
-        imageStyle={
-          {
-            'object-view-box': isMobile ? 'inset(0% 10% 25% -14%)' : undefined
-          } as CSSProperties
-        }
       >
         A Otoneurologia é uma subespecialidade médica que se concentra no estudo
         e tratamento dos distúrbios relacionados ao ouvido interno e ao sistema
