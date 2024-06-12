@@ -18,11 +18,11 @@ export async function POST(request: NextRequest) {
     });
   }
 
+  const body = parseResult.data;
+
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     from: process.env.MAIL_FROM,
-    secure: false,
-    ignoreTLS: true,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD
@@ -31,35 +31,35 @@ export async function POST(request: NextRequest) {
 
   await transporter.verify();
 
-  // await transporter.sendMail({
-  //   from: process.env.MAIL_FROM,
-  //   to: [process.env.NEXT_PUBLIC_MAIL_TO!],
-  //   subject: `Via formulario de contato: ${body.subject}`,
-  //   text: `
-  //     Nome: ${body.name}
-  //     E-mail: ${body.email}
-  //     Telefone: ${body.phone}
-  //     Assunto: ${body.subject}
-  //     Mensagem:
-  //     ${body.message}
-  //   `,
-  //   replyTo: body.email
-  // });
-  //
-  // await transporter.sendMail({
-  //   from: process.env.MAIL_FROM,
-  //   to: [body.email],
-  //   subject: `Sua mensagem foi enviada, logo responderemos`,
-  //   text: `
-  //     Nome: ${body.name}
-  //     E-mail: ${body.email}
-  //     Telefone: ${body.phone}
-  //     Assunto: ${body.subject}
-  //     Mensagem:
-  //     ${body.message}
-  //   `,
-  //   replyTo: process.env.MAIL_FROM
-  // });
+  await transporter.sendMail({
+    from: process.env.MAIL_FROM,
+    to: [process.env.MAIL_FROM!],
+    subject: `Via formulario de contato: ${body.subject}`,
+    text: `
+      Nome: ${body.name}
+      E-mail: ${body.email}
+      Telefone: ${body.phone}
+      Assunto: ${body.subject}
+      Mensagem:
+      ${body.message}
+    `,
+    replyTo: body.email
+  });
+
+  await transporter.sendMail({
+    from: process.env.MAIL_FROM,
+    to: [body.email],
+    subject: `Sua mensagem foi enviada, logo responderemos`,
+    text: `
+      Nome: ${body.name}
+      E-mail: ${body.email}
+      Telefone: ${body.phone}
+      Assunto: ${body.subject}
+      Mensagem:
+      ${body.message}
+    `,
+    replyTo: process.env.MAIL_FROM
+  });
 
   return new NextResponse(null, {
     status: 201
