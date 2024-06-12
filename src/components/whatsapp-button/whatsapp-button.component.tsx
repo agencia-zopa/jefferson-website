@@ -5,7 +5,11 @@ import styles from './whatsapp-button.module.scss';
 
 export function WhatsappButton() {
   return (
-    <a href={process.env.NEXT_PUBLIC_WPP_LINK} target="_blank" className={styles.wppButton}>
+    <a
+      href={process.env.NEXT_PUBLIC_WPP_LINK}
+      target={'_blank'}
+      className={styles.wppButton}
+    >
       <Image src={wpp} alt={'WhatsApp'} />
     </a>
   );
