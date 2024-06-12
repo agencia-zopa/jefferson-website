@@ -62,6 +62,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 
   h1 {
     font-size: 1.7rem;
@@ -75,6 +76,10 @@
   p {
     font-size: 1.2rem;
     line-height: 140%;
+
+    a[href^=tel] {
+      color: white;
+    }
   }
 }
 

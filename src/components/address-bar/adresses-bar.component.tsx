@@ -25,7 +25,7 @@ const addresses: Address[] = [
   },
   {
     title: 'Atendimento',
-    description: 'De Segunda À Sexta Das 12:00 às 18h00. (51)999999999'
+    description: 'De Segunda À Sexta Das 08:00 às 19h00. (51) 99152-6125'
   }
 ];
 

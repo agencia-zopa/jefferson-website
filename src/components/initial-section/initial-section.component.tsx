@@ -25,7 +25,7 @@ export function InitialSection() {
         </span>
         <div className={styles.buttons}>
           <ScheduleAppointment />
-          <FrequentlyAskedQuestions />
+          {/*<FrequentlyAskedQuestions />*/}
         </div>
       </div>
       <Image
