@@ -5,7 +5,7 @@
   padding: 3.125rem 6.25rem;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   background-color: black;
 
   @include at-or-smaller-than(900px) {
@@ -54,6 +54,7 @@
   margin: 1.875rem 0;
   opacity: 0.25;
   border: 0.0625rem solid #ccc;
+  align-self: stretch;
 }
 
 .made-by {

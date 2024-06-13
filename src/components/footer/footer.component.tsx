@@ -12,18 +12,7 @@ import styles from './footer.module.scss';
 export function Footer() {
   return (
     <div className={styles.footer}>
-      <div className={styles.row}>
-        <LogoWithDetails darkVersion={true} />
-        <div className={styles.socialsWrapper}>
-          <span className={styles.socialsTitle}>Redes Sociais</span>
-          <div className={styles.socials}>
-            <Image src={whatsapp} alt={'Whatsapp'} />
-            <Image src={linkedin} alt={'LinkedIn'} />
-            <Image src={instagram} alt={'Instagram'} />
-            <Image src={x} alt={'X'} />
-          </div>
-        </div>
-      </div>
+      <LogoWithDetails darkVersion={true} />
       <hr />
       <a href={'https://trius.com.br'} className={styles.madeBy}>
         <span>Desenvolvido por</span>

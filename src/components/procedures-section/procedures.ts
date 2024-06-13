@@ -1,10 +1,10 @@
 import aplicacaoCorticoide from '@public/procedimentos/aplicação-corticoide.jpeg';
-import estapedotomia from '@public/procedimentos/estapedotomia.jpeg';
+import estapedectomia from '@public/procedimentos/estapedectomia.jpg';
 import implanteCoclear from '@public/procedimentos/implante-coclear.jpeg';
 import manobrasDeReposicionamento from '@public/procedimentos/manobras-de-reposicionamento.jpeg';
-import mastoidectomia from '@public/procedimentos/mastoidectomia.jpeg';
 import protesesAuditivas from '@public/procedimentos/proteses-auditivas.webp';
-import timpanoplastia from '@public/procedimentos/timpanoplastia.jpeg';
+import timpanomastoidectomia from '@public/procedimentos/timpanomastoidectomia.jpeg';
+import timpanoplastia from '@public/procedimentos/timpanoplastia.png';
 import timpanotomia from '@public/procedimentos/timpanotomia.jpeg';
 
 import { ProcedureItemProps } from '@/components/procedure-item/procedure-item.component';
@@ -20,7 +20,7 @@ export const procedures: ProcedureItemProps[] = [
     title: 'Estapedectomia / estapedotomia',
     subtitle:
       'Cirurgia realizada para tratar a otosclerose, na qual o estribo (um dos ossículos do ouvido) é removido (estapedectomia) ou parcialmente remodelado (estapedotomia) para restaurar a audição.',
-    imageSrc: estapedotomia
+    imageSrc: estapedectomia
   },
   {
     title: 'Timpanoplastia',
@@ -32,7 +32,7 @@ export const procedures: ProcedureItemProps[] = [
     title: 'Timpanomastoidectomia / Mastoidectomia',
     subtitle:
       'Cirurgia que envolve a remoção de parte do osso mastóide (mastoidectomia) e tecido infectado do ouvido médio e mastoide, frequentemente realizada para tratar infecções crônicas ou colesteatoma.',
-    imageSrc: mastoidectomia
+    imageSrc: timpanomastoidectomia
   },
   {
     title: 'Implante Coclear',
