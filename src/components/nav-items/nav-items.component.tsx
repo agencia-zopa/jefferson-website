@@ -13,7 +13,6 @@ const navOptions: NavItem[] = [
   { label: 'Procedimentos', path: '/', id: SectionIDs.PROCEDURES },
   { label: 'Patologias', path: '/patologias/' },
   { label: 'Avaliações', path: '/', id: SectionIDs.REVIEWS },
-  { label: 'Dúvidas', path: '/', id: SectionIDs.FAQ },
   { label: 'Contato', path: '/contato' }
 ];
 
