@@ -20,8 +20,8 @@ export function InitialSection() {
         </span>
         <span className={styles.description}>
           Otorrinolaringologista atuando desde 2015. Atendimento de doenças do
-          nariz, garganta e ouvidos. Especializado em Otologia Cirurgica,
-          Otologia Clinica e Otoneurologia.
+          nariz, garganta e ouvidos. Especializado em Otologia Cirúrgica,
+          Otologia Clínica e Otoneurologia.
         </span>
         <div className={styles.buttons}>
           <ScheduleAppointment />

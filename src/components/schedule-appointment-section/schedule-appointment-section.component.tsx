@@ -25,6 +25,7 @@ export function ScheduleAppointmentSection() {
           backgroundColor={'#0476F7'}
           textColor={'white'}
           iconSrc={commentIcon}
+          href={process.env.NEXT_PUBLIC_WPP_LINK}
         />
       </div>
       {/* FIXME: This is not the right image */}
